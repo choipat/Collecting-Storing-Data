@@ -1,0 +1,512 @@
+senator.state("TX")
+senator.number <- function(senator.firstname, senator.lastname) {
+senator.data1 <- online.file1[online.file1$first_name %in% senator.firstname &
+online.file1$last_name %in% senator.lastname,]
+senator.list <- c(senator.data1)
+#View(senator.list)
+phonenumber <- c(senator.list$phone)
+print(phonenumber)
+}
+senator.number( "Lamar","Alexander")
+Geo.data.frame
+View(Geo.data.frame)
+colnames(Geo.data.frame)
+View(Geo.data.frame)
+Geo.data.frame_filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y")]
+Geo.data.frame_filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+View(Geo.data.frame_filter)
+View(Geo.data.frame_filter)
+wic.data <- function(Geodata)
+Geodata <- Geo.data.frame
+Geo.data.frame_filter <- Geodata
+Geo.data.frame_filter <- Geodata[which(Geo.data.frame$X21 == "Y"),]
+View(Geo.data.frame_filter)
+}
+wic.data <- function(Geodata){
+Geodata <- Geo.data.frame
+Geo.data.frame_filter <- Geodata
+Geo.data.frame_filter <- Geodata[which(Geo.data.frame$X21 == "Y"),]
+View(Geo.data.frame_filter)
+}
+wic.data(Geo.data)
+wic.data(Geo.data)
+View(Geo.data)
+wic.data <- function(Geodata){
+Geodata <- Geo.data.frame
+Geo.data.frame_filter <- Geodata
+Geo.data.frame_filter <- Geodata[which(Geo.data.frame$X21 == "Y"),]
+Geo_Carrier_data <- Geo.data.frame_filter[Geo.data.frame_filter$X2 %in% Geodata,]
+}
+wic.data(Geo.data)
+wic.data <- function(Geodata){
+Geodata <- Geo.data.frame
+Geo.data.frame_filter <- Geodata
+Geo.data.frame_filter <- Geodata[which(Geo.data.frame$X21 == "Y"),]
+Geo_Carrier_data <- Geo.data.frame_filter[Geo.data.frame_filter$X2 %in% Geodata,]
+View(Geo_Carrier_data)
+}
+wic.data(Geo.data)
+View(Geo.data)
+wic.data <- function(Geodata){
+Geo.data.frame_filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+Geo_Carrier_data <- Geo.data.frame_filter[Geo.data.frame_filter$X2 %in% Geodata,]
+View(Geo_Carrier_data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(Geodata){
+Geo.data.frame_filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+Geo_Carrier_data <- Geo.data.frame_filter[Geo.data.frame_filter$X2 %in% Geodata,]
+cat("The market does accept WIC")
+print(Geo_Carrier_data$X2, Geo_Carrier_data$X21)
+}
+wic.data("100-Mile Market")
+wic.data <- function(Geodata){
+Geo.data.frame_filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+Geo_Carrier_data <- Geo.data.frame_filter[Geo.data.frame_filter$X2 %in% Geodata,]
+cat("The market does accept WIC")
+print("Geo_Carrier_data$X2", "Geo_Carrier_data$X21")
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(Geodata){
+Geo.data.frame_filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+Geo_Carrier_data <- Geo.data.frame_filter[Geo.data.frame_filter$X2 %in% Geodata,]
+print(Geo_Carrier_data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(Geodata){
+Geo.data.frame_filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+Geo_Carrier_data <- Geo.data.frame_filter[Geo.data.frame_filter$X2 %in% Geodata,]
+Geo_Carrier_data_frame <- data.frame(Geo.data.frame)
+print(Geo_Carrier_data_frame)
+}
+wic.data("100-Mile Market")
+wic.data <- function(Geodata){
+Geo.data.frame_filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+Geo_Carrier_data <- Geo.data.frame_filter[Geo.data.frame_filter$X2 %in% Geodata,]
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(Geodata){
+Geo.data.frame_filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+Geo_Carrier_data <- Geo.data.frame_filter[Geo.data.frame_filter$X2 %in% Geodata,]
+View(Geo_Carrier_data)
+}
+wic.data("100-Mile Market")
+wic.data <- function(Geodata){
+Geo.data.frame_filter <- Geo.data.frame[,c(Geo.data.frame$X2,Geo.data.frame$X21)]
+View(Geo.data.frame_filter)
+}
+wic.data(Geo.data.frame)
+ls()
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+print(Geo.data.filter)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+View(Geo.data.filter)
+}
+wic.data("100-Mile Market")
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+matched.geo.data <- Geo.data.frame[which(Geo.data.frame$X2 %in% X)]
+print(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+matched.geo.data <- Geo.data.frame[which(Geo.data.frame$X2 %in% X)]
+View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X)]
+View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X3 %in% X)]
+View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X3 %in% X)]
+#View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+wic.data(100-Mile Market)
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X3 %in% X)]
+#View(matched.geo.data)
+}
+wic.data(100-Mile Market)
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X3 %in% X)]
+#View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X3 %in% X)]
+#View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X,Y){
+Geo.data.filter <- Geo.data.frame[Geo.data.frame$X2 %in% X &
+Geo.data.frame$X21 %in% Y,]
+print(Geo.data.filter)
+}
+wic.data("100-Mile Market","Y")
+##4A-3
+wic.data <- function(X,Y){
+Geo.data.filter <- Geo.data.frame[Geo.data.frame$X2 %in% X &
+Geo.data.frame$X21 %in% Y,]
+View(Geo.data.filter)
+}
+wic.data("100-Mile Market","Y")
+##4A-3
+wic.data <- function(X,Y){
+if(Geo.data.filter <- Geo.data.frame[Geo.data.frame$X2 %in% X &
+Geo.data.frame$X21 %in% Y,]){
+print("Yes it accepts")
+}else{
+print("No it doesn't")
+}
+##4A-3
+wic.data <- function(X,Y){
+if(Geo.data.filter <- Geo.data.frame[Geo.data.frame$X2 %in% X &
+Geo.data.frame$X21 %in% Y,]){
+print("Yes it accepts")
+}else{
+print("No it doesn't")
+}
+}
+##4A-3
+wic.data <- function(X,Y){
+if(Geo.data.filter <- Geo.data.frame[Geo.data.frame$X2 %in% X &
+Geo.data.frame$X21 %in% Y,]){
+print("Yes it accepts")
+}else{
+print("No it doesn't")
+}
+}
+wic.data("100-Mile Market","Y")
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+wic.data("100-Mile Market")
+csadc
+if.ol
+}
+}
+##4A-3
+wic.data <- function(X,Y){
+if(Geo.data.filter <- Geo.data.frame[Geo.data.frame$X2 %in% X &
+Geo.data.frame$X21 %in% Y,]){
+print("Yes it accepts")
+}else{
+print("No it doesn't")
+}
+}
+wic.data("100-Mile Market","Y")
+##4A-3
+wic.data <- function(X)
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X3 %in% X)]
+}
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X3 %in% X)]
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X3 %in% X)]
+View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+View(Geo.data.filter)
+#matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X3 %in% X)]
+colnames(Geo.data.filter)
+#View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+#matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X3 %in% X)]
+colnames(Geo.data.filter)
+#View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+View(Geo.data.filter)
+#matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X3 %in% X)]
+colnames(Geo.data.filter)
+#View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X)]
+#colnames(Geo.data.filter)
+View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X4 %in% X)]
+#colnames(Geo.data.filter)
+View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X4 %in% X)]
+#colnames(Geo.data.filter)
+View(matched.geo.data)
+}
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X4 %in% X)]
+#colnames(Geo.data.filter)
+View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X4 %in% X),]
+#colnames(Geo.data.filter)
+View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+View(matched.geo.data)
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+matched.geo.data[1,2]
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data(c(1,2),c(1,21))
+}
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data(c(1,2),c(1,21)))
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- as.vector(matched.geo.data(c(1,2),c(1,21)))
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(1,2),c(1,21)])
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(1,2),c(1,21)])
+geo.data.matched
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(,2),c(,21)])
+geo.data.matched
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(2,),c(21,)])
+geo.data.matched
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(1,2),c(1,21)],)
+geo.data.matched
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(1,2),c(1,21)])
+geo.data.matched
+}
+wic.data("100-Mile Market")
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(1,2),c(1,21)])
+geo.data.matched
+cat("market"\n)
+print(geo.data.matched[1][2])
+}
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(1,2),c(1,21)])
+geo.data.matched
+cat("market"\n)
+print(geo.data.matched[1])
+}
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(1,2),c(1,21)])
+#geo.data.matched
+cat("market"\n)
+print(geo.data.matched[1])
+}
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(1,2),c(1,21)])
+#geo.data.matched
+cat("market"\n)
+print(geo.data.matched[1])
+}
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(1,2),c(1,21)])
+#geo.data.matched
+cat("market"\n)
+print(geo.data.matched(1))
+}
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(1,2),c(1,21)])
+#geo.data.matched
+cat("market"\n)
+print(geo.data.matched[1])
+}
+##4A-3
+wic.data <- function(X){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% X),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(1,2),c(1,21)])
+geo.data.matched
+#cat("market"\n)
+#print(geo.data.matched[1])
+}
+wic.data("100-Mile Market")
+wic.data <- function(marketname){
+Geo.data.filter <- Geo.data.frame[which(Geo.data.frame$X21 == "Y"),]
+#View(Geo.data.filter)
+matched.geo.data <- Geo.data.filter[which(Geo.data.filter$X2 %in% marketname),]
+#colnames(Geo.data.filter)
+geo.data.matched <- c(matched.geo.data[c(1,2),c(1,21)])
+geo.data.matched
+}
+wic.data("100-Mile Market")

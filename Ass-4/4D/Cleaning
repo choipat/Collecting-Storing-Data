@@ -1,0 +1,36 @@
+setwd("C:/Users/Michael Propp/Desktop/Information Assignemnt/Ass-4/4D/")
+movies <- read.table("movies sample", header = T, fill = T,stringsAsFactors = F)
+#this gave a dataframe and this doesnt work 
+movies_two <- read.table("movies sample", header = T, fill = T)
+# chut its the same, kya code kara  
+
+movies_three <- readLines("movies sample")
+movies_three
+#an example
+#x <- "I like %$@to*&, chew;: gum, but don't like|}{[] bubble@#^)( gum!?"
+A <- gsub("[^[:alnum:][:space:]']", "", movies_three)
+#the above code removed all the non numeric and alphabetic characters like "\" # and (),
+#but we still have numeric 
+#gsub("(.*?)($|'|[^[:punct:]]+?)(.*?)", "\\2", movies_three)
+# same thing 
+#A
+# removed the non numerics and alphabets 
+movies_three
+#unique(na.omit(as.character(unlist(strsplit(unlist(movies_three), "[^a-z]+")))))
+# this removes the numerics from the string and unlist them
+# not that efficient
+B <- gsub('[[:digit:]]+', '', A)
+#B
+#Removes the numericals, all we are left is with \t\t\t 
+D <- gsub('[\t\n]', '', B)
+D[1]
+D[5]
+###### Gives you a clean data with just alphabets 
+# kind of good but not the one required 
+
+experiment <- gsub('[\t]', '  ', A)
+# perfect one which we require 
+experiment_new <- strsplit(experiment," ")
+#df <- data.frame(matrix(unlist(experiment_new), nrow=206, byrow=T))
+df_1 <-do.call(rbind.data.frame, experiment_new)
+View(df)

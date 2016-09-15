@@ -1,0 +1,80 @@
+library(openxlsx)
+library(XML)
+###########################################
+##4B-1
+online.file <- xmlParse("http://www.xmldatasets.net/temp/179681356453762.xml")
+online.file1 <- xmlToDataFrame(online.file)
+View(online.file1)
+url <- "http://www.xmldatasets.net/temp/179681356453762.xml"
+online.data  <- xmlToDataFrame(url)
+View(online.data)
+
+###################################################
+#Write a function that returns the names of the senators for a given state, i.e.,
+#the function takes a state as an argument and returns the names of the senators for that
+#state in a vector.
+
+##Write a function that returns the phone number for a given senator.
+#########################################################################
+
+##4B-2 
+names(online.file1)
+
+senator.state <- function(senator.states){
+  #senator.data <- senator.states
+  senator.data.file <- online.file1[online.file1$state %in% senator.states,]
+  data.names <- c(senator.data.file)
+  #cat("The name of the senator is ","\"")
+  names_last <- c(data.names$last_name)
+  names_first <- c(data.names$first_name)
+  print(names_first[1])
+  print(names_last[1])
+  View(data.names)
+  #names(data.names)
+  #names_first <- c(data.names$first_name)
+  #names_last <- c(data.names$last_name)
+  #print(names_first[1,], names_last[1,])
+  #print(data.names$first_name,data.names$last_name)
+}
+
+senator.state("TX")
+
+#######################################################################
+##4B - 3
+
+senator.number <- function(senator.firstname, senator.lastname) {
+  senator.data1 <- online.file1[online.file1$first_name %in% senator.firstname &
+                                  online.file1$last_name %in% senator.lastname,]
+  senator.list <- c(senator.data1)
+  #View(senator.list)
+  phonenumber <- c(senator.list$phone)
+  print(phonenumber)
+}
+
+senator.number( "Lamar","Alexander")
+####################################################################
+
+
+
+#####################################################################
+##4D 
+setwd("C://Users/Michael Propp/Desktop/Information Assignemnt/Ass-4/4D/")
+
+
+library("R.utils")
+install.packages("R.utils")
+
+
+#imdb.data <- untar("movies.list.gz", exdir = "C://Users/Michael Propp/Desktop/Information Assignemnt/Ass-4/4D/")
+
+
+
+imdb.data1 <- gunzip("movies.list.gz")
+class(imdb.data1)
+View(imdb.data1)
+
+imdb.data <- read.table("movies.list", header = TRUE, sep = "", fill = TRUE,encoding="UTF-8")
+
+imdb.data.1 <- readLines("movies.list", encoding="UTF-8")
+
+rm(imdb.data.1)

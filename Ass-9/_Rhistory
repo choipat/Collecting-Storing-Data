@@ -1,0 +1,512 @@
+dbWriteTable(conn = bird_data_aircraft,name = "Aircraft",value = bird_data_aircraft_df,row.names= F)
+dbWriteTable(conn = bird_data_aircraft_df,name = "Aircraft",value = bird_data_aircraft_df$bird_data_aircraft,row.names= F)
+dbWriteTable(conn = bird_data_aircraft_df,name = "Aircraft",value = bird_data_aircraft_df,row.names= F)
+bird_data_aircraft_final <- bird_data_aircraft_df$bird_data_aircraft
+dbWriteTable(conn = bird_data_aircraft_df,name = "Aircraft",value = bird_data_aircraft_final,row.names= F)
+dbWriteTable(conn = bird_data_aircraft_df,name = "Aircraft",value = bird_data_aircraft_final,row.names= F)
+dbReadTable(db,"bird_data_aircraft_df")
+rm(bird_data_aircraft_final,bird_data_aircraft_df,bird_data_aircraft)
+View(bird.data)
+View(df)
+View(authors)
+bird_data <- unique(cbind.data.frame(as.character(bird.data$Aircraft..Type),as.character(bird.data$Aircraft..Make.Model)))
+bird_data_aircraftID <- sample(1:6,nrow(bird_data))
+bird_data_$aircraftID <- sample(1:6,nrow(bird_data))
+bird_data <- unique(cbind.data.frame(as.character(bird.data$Aircraft..Type),as.character(bird.data$Aircraft..Make.Model)))
+bird_data_$aircraftID <- sample(1:6,nrow(bird_data))
+bird_data$aircraftID <- sample(1:6,nrow(bird_data))
+bird_data$aircraftID <- sample(1:6,nrow(bird_data))
+dbWriteTable(conn = db, name = "bird_data",value =bird_data,
+row.names = F)
+dbReadTable(db,"bird_data")
+View(bird_data)
+View(bird_data)
+View(book.data)
+bird.data.new$aircraftID <- sample(1:nrow(bird_data))
+bird_data.new$aircraftID <- sample(1:nrow(bird_data))
+bird_data$AircraftID <- sample(1:nrow(bird_data))
+View(bird_data$AircraftID)
+dbWriteTable(conn = db, name = "bird_data_new",value =bird_data,
+row.names = F)
+View(df)
+database <- dbConnect(SQLite(),dbname="bird_data.sqlite")
+View(df)
+Aircraft <- unique(cbind.data.frame(as.character(df$Aircraft..Type),as.character(df$Aircraft..Make.Model),
+as.character(df$Aircraft..Flight.Number),
+as.character(df$Aircraft..Number.of.engines.)))
+View(Aircraft)
+View(Aircraft)
+Aircraft_new <- unique(cbind.data.frame(df$Aircraft..Type,df$Aircraft..Make.Model,
+df$Aircraft..Flight.Number,
+df$Aircraft..Number.of.engines.)
+Aircraft_new <- unique(cbind.data.frame(df$Aircraft..Type,df$Aircraft..Make.Model,
+df$Aircraft..Flight.Number,
+df$Aircraft..Number.of.engines.))
+Aircraft_new <- unique(cbind.data.frame(df$Aircraft..Type,df$Aircraft..Make.Model,
+df$Aircraft..Flight.Number,
+df$Aircraft..Number.of.engines.))
+View(Aircraft)
+View(Aircraft_new)
+rm(Aircraft)
+colnames(Aircraft) <- c("Type of airplane","Make of moedl","Flight number", "Number of engines")
+colnames(Aircraft_new) <- c("Type of airplane","Make of moedl","Flight number", "Number of engines")
+Aircraft_new$ID <- sample(1:nrow(Aircraft_new))
+View(Aircraft_new)
+dbWriteTable(conn = database, name = "Aircraft", value = Aircraft_new,
+row.names = F)
+dbReadTable(database,"Aircraft_new")
+dbReadTable(database,"Aircraft")
+merged.data<- merge(df,authors,by.x=c("AuthorName","AuthorDetails"),
+by.y=c("Author Name","Author Details"))
+dbReadTable(db,"Authors")
+merged.data<- merge(df,authors,by.x=c("AuthorName","AuthorDetails"),
+by.y=c("Author Name","Author Details"))
+books<- unique(cbind.data.frame(as.character(df$BookName),as.character(df$BookGenre))) #removing redundancy
+colnames(books)<- c("Book Name", "Book Genre")
+books$bookID<-sample(100:130,nrow(books))
+finalmerge<- merge(merged.data,books, by.x=c("BookName","BookGenre"),by.y=c("Book Name","Book Genre"))
+View(df)
+finalmerge<- merge(book.data,books, by.x=c("BookName","BookGenre"),by.y=c("Book Name","Book Genre"))
+View(finalmerge)
+View(book.data)
+merge.data <- merge(book.data,authors,by.x=c("AuthorName","AuthorDetails"),
+by.y=c("Author Name","Author Details"))
+View(merge.data)
+finalmerge<- merge(merge.data,books, by.x=c("BookName","BookGenre"),by.y=c("Book Name","Book Genre"))
+finalmerge
+books<- unique(cbind.data.frame(as.character(df$BookName),as.character(df$BookGenre))) #removing redundancy
+colnames(books)<- c("Book Name", "Book Genre")
+books$bookID<-sample(100:130,nrow(books))
+finalmerge<- merge(merge.data,books, by.x=c("BookName","BookGenre"),by.y=c("Book Name","Book Genre"))
+books<- unique(cbind.data.frame(as.character(book.data$BookName),as.character(book.data$BookGenre))) #removing redundancy
+colnames(books)<- c("Book Name", "Book Genre")
+books$bookID<-sample(100:130,nrow(books))
+finalmerge<- merge(merge.data,books, by.x=c("BookName","BookGenre"),by.y=c("Book Name","Book Genre"))
+finalmerge
+View(merge.data)
+View(finalmerge)
+Birdstrike <- unique(cbind.data.frame(df$Effect..Impact.to.flight,
+df$Effect..Other,df$Reported..Date,df$Remains.of.wildlife.collected.,
+df$Pilot.warned.of.birds.or.wildlife.,df$When..Time..HHMM.,df$When..Time.of.day,
+df$Remains.of.wildlife.sent.to.Smithsonian)
+Birdstrike <- unique(cbind.data.frame(df$Effect..Impact.to.flight,
+df$Effect..Other,df$Reported..Date,df$Remains.of.wildlife.collected.,
+df$Pilot.warned.of.birds.or.wildlife.,df$When..Time..HHMM.,df$When..Time.of.day,
+df$Remains.of.wildlife.sent.to.Smithsonian))
+Birdstrike <- unique(cbind.data.frame(df$Effect..Impact.to.flight,
+df$Effect..Other,df$Reported..Date,df$Remains.of.wildlife.collected.,
+df$Pilot.warned.of.birds.or.wildlife.,df$When..Time..HHMM.,df$When..Time.of.day,
+df$Remains.of.wildlife.sent.to.Smithsonian))
+names(Birdstrike)
+colnames(Birdstrike) <- c("Impact",
+"Other effect",
+"Reported Date",
+"Remians collected",
+"Pilot warned",
+"Time HHMM",
+"Time of day",
+"Smithsonian collection")
+Birdstrike_new$ID <- sample(1:nrow(Birdstrike))
+Birdstriknew$ID <- sample(1:nrow(Birdstrike))
+Birdstrike$ID <- sample(1:nrow(Birdstrike))
+dbWriteTable(conn = database , name = "Birdstrike", value = Birdstrike,
+row.names = F)
+dbReadTable(db ,"Birdstrike")
+dbReadTable(database ,"Birdstrike")
+View(merge.data)
+View(book.data)
+Aircraft_data <- merge(df,Aircraft_new,by.x=c("Type of airplane","Make of moedl","Flight number", "Number of engines"),
+by.y=c("Type of airplane","Make of moedl","Flight number", "Number of engines"))
+View(Birdstrike)
+View(df)
+db <- dbConnect(SQLite(),dbname="booksData.sqlite")
+book_data <- read.csv("bookData.csv", header=TRUE)
+authors <- unique(cbind.data.frame(as.character(book_data$AuthorName),as.character(book_data$AuthorDetails))) # removing redundancy
+colnames(authors)<- c("Author Name", "Author Details")
+authors$AuthorID <- sample(1:20,nrow(authors))
+dbWriteTable(conn = db, name = "Authors", value = authors,
+row.names = FALSE)
+Aircraft_data <- merge(df,Aircraft_new,by.x=c("Type of airplane","Make of moedl","Flight number", "Number of engines"),
+by.y=c("Type of airplane","Make of moedl","Flight number", "Number of engines"))
+Aircraft_data <- merge(df,Aircraft_new,by.x=c("df$Aircraft..Type","df$Aircraft..Make.Model",
+"df$Aircraft..Flight.Number",
+"df$Aircraft..Number.of.engines"),
+by.y=c("Type of airplane","Make of moedl","Flight number", "Number of engines"))
+View(Aircraft_new)
+df
+View(df)
+View(Aircraft_new)
+Aircraft_data <- merge(Aircraft_new,Aircraft_new,by.x=c("df$Aircraft..Type","df$Aircraft..Make.Model",
+"df$Aircraft..Flight.Number",
+"df$Aircraft..Number.of.engines"),
+by.y=c("Type of airplane","Make of moedl","Flight number", "Number of engines"))
+View(book.data)
+Aircraft_data <- merge(df,Aircraft_new,by.x=c("Aircraft..Type","Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y=c("Type of airplane","Make of moedl","Flight number", "Number of engines"))
+merge.data <- merge(book.data,authors,by.x=c("AuthorName","AuthorDetails"),
+by.y=c("Author Name","Author Details"))
+View(book.data)
+View(book_data)
+Aircraft_data <- read.csv("Bird Strikes.csv", header=TRUE)
+Aircraft_new <- unique(cbind.data.frame(Aircraft_data$Aircraft..Type,Aircraft_data$Aircraft..Make.Model,
+Aircraft_data$Aircraft..Flight.Number,
+Aircraft_data$Aircraft..Number.of.engines.))
+colnames(Aircraft_new) <- c("Type of airplane","Make of moedl","Flight number", "Number of engines")
+Aircraft_new$ID <- sample(1:nrow(Aircraft_new))
+dbWriteTable(conn = database, name = "Aircraft", value = Aircraft_new,
+row.names = F)
+dbReadTable(database,"Aircraft")
+Aircraft_data <- merge(Aircraft,Aircraft_new,by.x=c("Aircraft..Type","Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y=c("Type of airplane","Make of moedl","Flight number", "Number of engines"))
+library(RSQLite)
+database <- dbConnect(SQLite(),dbname="bird_data.sqlite")
+Aircraft_data <- read.csv("Bird Strikes.csv", header=TRUE)
+Aircraft_new <- unique(cbind.data.frame(Aircraft_data$Aircraft..Type,Aircraft_data$Aircraft..Make.Model,
+Aircraft_data$Aircraft..Flight.Number,
+Aircraft_data$Aircraft..Number.of.engines.))
+colnames(Aircraft_new) <- c("Type of airplane","Make of moedl","Flight number", "Number of engines")
+Aircraft_new$ID <- sample(1:nrow(Aircraft_new))
+dbWriteTable(conn = database, name = "Aircraft", value = Aircraft_new,
+row.names = F)
+database <- dbConnect(SQLite(),dbname="bird.data.sqlite")
+Aircraft_data <- read.csv("Bird Strikes.csv", header=TRUE)
+#Aircraft
+Aircraft_new <- unique(cbind.data.frame(Aircraft_data$Aircraft..Type,Aircraft_data$Aircraft..Make.Model,
+Aircraft_data$Aircraft..Flight.Number,
+Aircraft_data$Aircraft..Number.of.engines.))
+colnames(Aircraft_new) <- c("Type of airplane","Make of moedl","Flight number", "Number of engines")
+Aircraft_new$ID <- sample(1:nrow(Aircraft_new))
+dbWriteTable(conn = database, name = "Aircraft", value = Aircraft_new,
+row.names = F)
+dbReadTable(database,"Aircraft")
+db <- dbConnect(SQLite(),dbname="booksData.sqlite")
+book_data <- read.csv("bookData.csv", header=TRUE)
+authors <- unique(cbind.data.frame(as.character(book_data$AuthorName),as.character(book_data$AuthorDetails))) # removing
+View(authors)
+colnames(authors)<- c("Author Name", "Author Details")
+authors$AuthorID <- sample(1:20,nrow(authors))
+dbWriteTable(conn = db, name = "Authors", value = authors,
+row.names = FALSE)
+db <- dbConnect(SQLite(),dbname="books.Data.new.sqlite")
+book_data <- read.csv("bookData.csv", header=TRUE)
+authors <- unique(cbind.data.frame(as.character(book_data$AuthorName),as.character(book_data$AuthorDetails))) # removing
+#View(authors)
+colnames(authors)<- c("Author Name", "Author Details")
+authors$AuthorID <- sample(1:20,nrow(authors))
+dbWriteTable(conn = db, name = "Authors", value = authors,
+row.names = FALSE)
+View(book.data)
+View(authors)
+dbReadTable(db,"Authors")
+merge.data <- merge(book.data,authors,by.x=c("AuthorName","AuthorDetails"),
+by.y=c("Author Name","Author Details"))
+merge.data <- merge(book_data,authors,by.x=c("AuthorName","AuthorDetails"),
+by.y=c("Author Name","Author Details"))
+View(authors)
+View(book_data)
+View(authors)
+dbWriteTable(conn = database, name = "Aircraft", value = Aircraft_new,
+row.names = F)
+dbReadTable(database,"Aircraft")
+Aircraft_new$ID <- sample(1:nrow(Aircraft_new))
+dbWriteTable(conn = database, name = "Aircraft", value = Aircraft_new,
+row.names = F)
+dbReadTable(database,"Aircraft")
+Aircraft_new_data <- merge(Aircraft_data,Aircraft_new,by.x=c("Aircraft..Type","Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y=c("Type of airplane","Make of moedl","Flight number", "Number of engines"))
+rm(bird.data.sqlite)
+Birdstrike <- unique(cbind.data.frame(as.character(df$Effect..Impact.to.flight),
+as.character(df$Effect..Other,df$Reported..Date),
+as.character(df$Remains.of.wildlife.collected.),
+as.character(df$Pilot.warned.of.birds.or.wildlife.),
+as.character(df$When..Time..HHMM.,df$When..Time.of.day),
+as.character(df$Remains.of.wildlife.sent.to.Smithsonian))
+Birdstrike <- unique(cbind.data.frame(as.character(df$Effect..Impact.to.flight),
+as.character(df$Effect..Other,df$Reported..Date),
+as.character(df$Remains.of.wildlife.collected.),
+as.character(df$Pilot.warned.of.birds.or.wildlife.),
+as.character(df$When..Time..HHMM.,df$When..Time.of.day),
+as.character(df$Remains.of.wildlife.sent.to.Smithsonian)))
+Birdstrike <- unique(cbind.data.frame(as.character(df$Effect..Impact.to.flight),
+as.character(df$Effect..Other,df$Reported..Date),
+as.character(df$Remains.of.wildlife.collected.),
+as.character(df$Pilot.warned.of.birds.or.wildlife.),
+as.character(df$When..Time..HHMM.,df$When..Time.of.day),
+as.character(df$Remains.of.wildlife.sent.to.Smithsonian)))
+View(Aircraft_data)
+#Birdstrike
+Birdstrike <- unique(cbind.data.frame(as.character(df$Effect..Impact.to.flight),
+as.character(df$Effect..Other,df$Reported..Date),
+as.character(df$Remains.of.wildlife.collected.),
+as.character(df$Pilot.warned.of.birds.or.wildlife.),
+as.character(df$When..Time..HHMM.),
+as.character(df$When..Time.of.day),
+as.character(df$Remains.of.wildlife.sent.to.Smithsonian)))
+Birdstrike <- unique(cbind.data.frame(as.character(Aircraft_data$Effect..Impact.to.flight),
+as.character(Aircraft_data$Effect..Other,df$Reported..Date),
+as.character(Aircraft_data$Remains.of.wildlife.collected.),
+as.character(Aircraft_data$Pilot.warned.of.birds.or.wildlife.),
+as.character(Aircraft_data$When..Time..HHMM.),
+as.character(Aircraft_data$When..Time.of.day),
+as.character(Aircraft_data$Remains.of.wildlife.sent.to.Smithsonian)))
+Birdstrike <- unique(cbind.data.frame(as.character(Aircraft_data$Effect..Impact.to.flight),
+as.character(Aircraft_data$Effect..Other),
+as.character(Aircraft_data$Reported..Date),
+as.character(Aircraft_data$Remains.of.wildlife.collected.),
+as.character(Aircraft_data$Pilot.warned.of.birds.or.wildlife.),
+as.character(Aircraft_data$When..Time..HHMM.),
+as.character(Aircraft_data$When..Time.of.day),
+as.character(Aircraft_data$Remains.of.wildlife.sent.to.Smithsonian)))
+names(Birdstrike)
+colnames(Birdstrike) <- c("Impact",
+"Other effect",
+"Reported Date",
+"Remians collected",
+"Pilot warned",
+"Time HHMM",
+"Time of day",
+"Smithsonian collection")
+Birdstrike$ID <- sample(1:nrow(Birdstrike))
+dbWriteTable(conn = database , name = "Birdstrike", value = Birdstrike,
+row.names = F)
+dbReadTable(database ,"Birdstrike")
+Birdstrike_data  <- merge(Aircraft_data,Birdstrike,
+by.x=c("Impact",
+"Other effect",
+"Reported Date",
+"Remians collected",
+"Pilot warned",
+"Time HHMM",
+"Time of day",
+"Smithsonian collection")
+by.y=c("Impact",
+"Other effect",
+"Reported Date",
+"Remians collected",
+"Pilot warned",
+"Time HHMM",
+"Time of day",
+"Smithsonian collection"))
+Birdstrike_data  <- merge(Aircraft_data,Birdstrike,
+by.x=c("Impact",
+"Other effect",
+"Reported Date",
+"Remians collected",
+"Pilot warned",
+"Time HHMM",
+"Time of day",
+"Smithsonian collection"),
+by.y=c("Impact",
+"Other effect",
+"Reported Date",
+"Remians collected",
+"Pilot warned",
+"Time HHMM",
+"Time of day",
+"Smithsonian collection"))
+Birdstrike_data  <- merge(Aircraft_data,Birdstrike,
+by.x=c("Aircraft_data$Effect..Impact.to.flight"),
+("Aircraft_data$Effect..Other"),
+("Aircraft_data$Reported..Date"),
+("Aircraft_data$Remains.of.wildlife.collected."),
+("Aircraft_data$Pilot.warned.of.birds.or.wildlife."),
+("Aircraft_data$When..Time..HHMM."),
+("Aircraft_data$When..Time.of.day"),
+("Aircraft_data$Remains.of.wildlife.sent.to.Smithsonian")
+,by.y=c("Impact",
+"Other effect",
+"Reported Date",
+"Remians collected",
+"Pilot warned",
+"Time HHMM",
+"Time of day",
+"Smithsonian collection"))
+View(Birdstrike)
+colnames(Aircraft_data)
+Birdstrike_data  <- merge(Aircraft_data,Birdstrike,
+by.x=c("Effect..Impact.to.flight"),
+("Effect..Other"),
+("Reported..Date"),
+("Remains.of.wildlife.collected."),
+("Pilot.warned.of.birds.or.wildlife."),
+("When..Time..HHMM."),
+("When..Time.of.day"),
+("Remains.of.wildlife.sent.to.Smithsonian")
+,by.y=c("Impact",
+"Other effect",
+"Reported Date",
+"Remians collected",
+"Pilot warned",
+"Time HHMM",
+"Time of day",
+"Smithsonian collection"))
+Birdstrike_data  <- merge(Aircraft_data,Birdstrike,
+by.x=c("Effect..Impact.to.flight",
+"Effect..Other",
+"Reported..Date",
+"Remains.of.wildlife.collected.",
+"Pilot.warned.of.birds.or.wildlife.",
+"When..Time..HHMM.",
+"When..Time.of.day",
+"Remains.of.wildlife.sent.to.Smithsonian")
+, by.y=c("Impact",
+"Other effect",
+"Reported Date",
+"Remians collected",
+"Pilot warned",
+"Time HHMM",
+"Time of day",
+"Smithsonian collection"))
+Birdstrike_data
+View(Birdstrike_data)
+Aircraft_new <- unique(cbind.data.frame(Aircraft_data$Aircraft..Type,Aircraft_data$Aircraft..Make.Model,
+Aircraft_data$Aircraft..Flight.Number,
+Aircraft_data$Aircraft..Number.of.engines.))
+colnames(Aircraft_new) <- c("Type of airplane","Make of moedl","Flight number", "Number of engines")
+Aircraft_new$ID <- sample(1:nrow(Aircraft_new))
+dbWriteTable(conn = database, name = "Aircraft", value = Aircraft_new,
+row.names = F)
+rm(Aircraft_new)
+rm(Aircraft_new)
+Aircraft_new <- unique(cbind.data.frame(Aircraft_data$Aircraft..Type,Aircraft_data$Aircraft..Make.Model,
+Aircraft_data$Aircraft..Flight.Number,
+Aircraft_data$Aircraft..Number.of.engines.))
+colnames(Aircraft_new) <- c("Type of airplane","Make of moedl","Flight number", "Number of engines")
+Aircraft_new$ID <- sample(1:nrow(Aircraft_new))
+dbWriteTable(conn = database, name = "Aircraft", value = Aircraft_new,
+row.names = F)
+dbReadTable(database,"Aircraft")
+Aircraft_new_data <- merge(Aircraft_data,Aircraft_new,by.x=c("Aircraft..Type","Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y=c("Type of airplane","Make of moedl","Flight number", "Number of engines"))
+Aircraft_new_data <- merge(Birdstrike_data,Aircraft_new,by.x=c("Aircraft..Type","Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y=c("Type of airplane","Make of moedl","Flight number", "Number of engines"))
+colnames(Birdstrike)
+colnames(Birdstrike_data)
+colnames(Aircraft_new)
+colnames(Birdstrike_data)
+Aircraft_new_data <- merge(Birdstrike_data,Aircraft_new,by.x=c("Aircraft..Type","Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y=c("Type of airplane","Make of moedl","Flight number", "Number of engines"))
+View(Aircraft_new)
+View(Aircraft_data)
+rm(Aircraft_new)
+Aircraft_data_new <- unique(cbind.data.frame
+(as.character(Aircraft_data$Aircraft..Type),
+as.character(Aircraft_data$Aircraft..Make.Model),
+as.character(Aircraft_data$Aircraft..Flight.Number),
+as.character(Aircraft_data$Aircraft..Number.of.engines.))
+Aircraft_data_new <- unique(cbind.data.frame
+(as.character(Aircraft_data$Aircraft..Type),
+as.character(Aircraft_data$Aircraft..Make.Model),
+as.character(Aircraft_data$Aircraft..Flight.Number),
+as.character(Aircraft_data$Aircraft..Number.of.engines.)))
+Aircraft_data_new <- unique(cbind.data.frame
+(as.character(Aircraft_data$Aircraft..Type),
+as.character(Aircraft_data$Aircraft..Make.Model),
+as.character(Aircraft_data$Aircraft..Flight.Number),
+as.character(Aircraft_data$Aircraft..Number.of.engines.)))
+colnames(Aircraft_data_new) <- c("Type of airplane","Make of moedl","Flight number", "Number of engines")
+Aircraft_data_new$ID <- sample(1:nrow(Aircraft_data_new))
+dbWriteTable(conn = database, name = "Aircraft", value = Aircraft_data_new,
+row.names = F)
+dbReadTable(database,"Aircraft")
+dbWriteTable(conn = database, name = "Aircraft", value = Aircraft_data_new,
+row.names = F)
+dbWriteTable(conn = database, name = "Aircraftnew", value = Aircraft_data_new,
+row.names = F)
+dbReadTable(database,"Aircraftnew")
+Aircraft_new_data <- merge(Birdstrike_data,Aircraft_new,
+by.x=c("Aircraft..Type",
+"Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y=c("Type of airplane",
+"Make of moedl",
+"Flight number",
+"Number of engines"))
+Aircraft_new_data <- merge(Birdstrike_data,Aircraft_data_new,
+by.x=c("Aircraft..Type",
+"Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y=c("Type of airplane",
+"Make of moedl",
+"Flight number",
+"Number of engines"))
+Aircraft_new_data <- merge(Birdstrike_data,Aircraftnew,
+by.x=c("Aircraft..Type",
+"Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y=c("Type of airplane",
+"Make of moedl",
+"Flight number",
+"Number of engines"))
+Aircraft_new_data <- merge(Birdstrike_data,Aircraft_data_new,
+by.x=c("Aircraft..Type",
+"Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y=c("Type of airplane",
+"Make of moedl",
+"Flight number",
+"Number of engines"))
+names(Birdstrike)
+names(Birdstrike_data)
+Aircraft_new_data <- merge(Birdstrike_data, Aircraft_data_new,
+by.x=c("Aircraft..Type",
+"Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y=c("Type of airplane",
+"Make of moedl",
+"Flight number",
+"Number of engines"))
+Aircraft_new_data <- merge(Birdstrike_data, Aircraft_data_new,
+by.x = c("Aircraft..Type",
+"Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y = c("Type of airplane",
+"Make of moedl",
+"Flight number",
+"Number of engines"))
+View(Birdstrike_data)
+View(Birdstrike_data)
+View(Birdstrike)
+View(Birdstrike_data)
+Aircraft_new_data <- merge(Aircraft_data, Aircraft_data_new,
+by.x = c("Aircraft..Type",
+"Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y = c("Type of airplane",
+"Make of moedl",
+"Flight number",
+"Number of engines"))
+colnames(Birdstrike_data)
+Aircraft_new_data <- merge(Birdstrike_data, Aircraft_data_new,
+by.x = c("Aircraft..Type",
+"Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines"),
+by.y = c("Type of airplane",
+"Make of moedl",
+"Flight number",
+"Number of engines"))
+View(Aircraft_data_new)
+colnames(Aircraft_data_new)
+Aircraft_data
+View(Aircraft_data)
+View(Aircraft_data)

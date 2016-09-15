@@ -1,0 +1,512 @@
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier <- colSums(newdata_carrier[,7], != 0 , na.rm = TRUE)
+print(newdata_carrier)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+# print(newdata_carrier)
+#print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier <- colSums(newdata_carrier[,7], != 0 , na.rm = TRUE)
+print(newdata_carrier)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+# print(newdata_carrier)
+#print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier <- colSums(newdata_carrier[,7] != 0 , na.rm = TRUE)
+print(newdata_carrier)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average("AA","LAX")
+Average("AA","LAX")
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+# print(newdata_carrier)
+#print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier <- colSums(newdata_carrier[,2] != 0 , na.rm = TRUE)
+print(newdata_carrier)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average("AA","LAX")
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+# print(newdata_carrier)
+#print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier.1 <- newdata_destination(newdata_destination[,7],na.rm = TRUE)
+#newdata_carrier <- colSums(newdata_carrier[,7] != 0 , na.rm = TRUE)
+print(newdata_carrier)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average("AA","LAX")
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+# print(newdata_carrier)
+#print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier.1 <- newdata_carrier(newdata_carrier[,7],na.rm = TRUE)
+#newdata_carrier <- colSums(newdata_carrier[,7] != 0 , na.rm = TRUE)
+print(newdata_carrier.1)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average("AA","LAX")
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_carrier)
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier.1 <- newdata_carrier(newdata_carrier[,7],na.rm = TRUE)
+#newdata_carrier <- colSums(newdata_carrier[,7] != 0 , na.rm = TRUE)
+print(newdata_carrier.1)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average("AA","LAX")
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_carrier)
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier[newdata_carrier < 0] = 0
+#newdata_carrier <- colSums(newdata_carrier[,7] != 0 , na.rm = TRUE)
+print(newdata_carrier)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average("AA","LAX")
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_carrier)
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier[newdata_carrier < 0] = 0
+print(newdata_carrier)
+Coltotal <- colSums(newdata_carrier[,7] != 0 , na.rm = TRUE)
+print(Coltotal)
+sumtotal <-sum(Coltotal[1])
+print(sumtotal)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average("AA","LAX")
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_carrier)
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier[newdata_carrier < 0] = 0
+print(newdata_carrier)
+Coltotal <- colSums(newdata_carrier[,7] != 0 , na.rm = TRUE)
+print(Coltotal)
+#sumtotal <-sum(Coltotal[1])
+#print(sumtotal)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average("AA","LAX")
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_carrier)
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier[newdata_carrier < 0] = 0
+print(newdata_carrier)
+newdata_carrier_col <- newdata_carrier[,7]
+print(newdata_carrier_col)
+#sumtotal <-sum(Coltotal[1])
+#print(sumtotal)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average("AA","LAX")
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_carrier)
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier[newdata_carrier < 0] = 0
+print(newdata_carrier)
+newdata_carrier_col <- data.frame(newdata_carrier[,7])
+print(newdata_carrier_col)
+#sumtotal <-sum(Coltotal[1])
+#print(sumtotal)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average("AA","LAX")
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_carrier)
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier[newdata_carrier < 0] = 0
+print(newdata_carrier)
+newdata_carrier_col <- data.frame(newdata_carrier[,7])
+print(newdata_carrier_col)
+sumtotal <-sum(newdata_carrier_col[1])
+print(sumtotal)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average("AA","LAX")
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_carrier)
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier[newdata_carrier < 0] = 0
+print(newdata_carrier)
+newdata_carrier_col <- data.frame(newdata_carrier[,7],na.rm = TRUE)
+print(newdata_carrier_col)
+sumtotal <-sum(newdata_carrier_col[1])
+print(sumtotal)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average("AA","LAX")
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_carrier)
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier[newdata_carrier < 0] = 0
+print(newdata_carrier)
+newdata_carrier_col <- data.frame(newdata_carrier[,7])
+print(newdata_carrier_col)
+sumtotal <-sum(newdata_carrier_col[1],na.rm = TRUE)
+print(sumtotal)
+#Average.data <- Delay.data / newdata_carrier
+#print(Average.data)
+}
+Average("AA","LAX")
+Average <- function(X,Y){
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_carrier)
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+print(newdata_destination)
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+newdata_carrier[newdata_carrier < 0] = 0
+print(newdata_carrier)
+newdata_carrier_col <- data.frame(newdata_carrier[,7])
+print(newdata_carrier_col)
+sumtotal <-sum(newdata_carrier_col[1],na.rm = TRUE)
+print(sumtotal)
+Average.data <- Delay.data / sumtotal
+print(Average.data)
+}
+Average("AA","LAX")
+AvgDelay <- function(CARRIER,DEST) {
+Filter_Carrier <- head(air.data[air.data$CARRIER %in% CARRIER,])
+Filter_Final <- head(air.data[air.data$DEST %in% DEST,])
+if (nrow(Filter_Final) > 0) {
+Arr_Min <- sum(Filter_Final$ARR_DELAY, na.rm = TRUE)
+Filter_Final[Filter_Final < 0] = 0
+Total <- mean(Filter_Final$ARR_DELAY !=0 , na.rm = TRUE)
+Element <- colSums(Filter_Final[6:14] != 0 , na.rm = TRUE)
+cat("The Total Numbers of different types Delays from your Carrier", "\"",CARRIER,"\"","that goes to provided destination", "\"",DEST,"\"","are","\n\n")
+print(Element)
+New_Element <- data.frame(Element)
+Avg_Arr_Delay <- Arr_Min/New_Element[2,]
+cat("\n")
+cat("The Average Arrival Delay of a Carrier", "\"",CARRIER,"\"", "Flying to the provided destination", "\"",DEST,"\"", "is", Avg_Arr_Delay)
+}
+else {
+print ("CARRIER AND / OR DESTINATION DO NOT MATCH OR FOUND")
+}
+}
+AvgDelay("AA","LAX")
+View(B)
+Average.data <- function(X,Y,) {
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+newdata_destination[newdata_destination < 0] = 0
+newdata_carrier[newdata_carrier < 0] = 0
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+}
+Average.data <- function(X,Y,) {
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+print(newdata_carrier)
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+newdata_carrier[newdata_carrier < 0] = 0
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+}
+Average.data <- function(X,Y) {
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+print(newdata_carrier)
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+newdata_carrier[newdata_carrier < 0] = 0
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+}
+Average.data("AA,LAX")
+Average.data <- function(X,Y) {
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+print(newdata_carrier)
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+newdata_carrier[newdata_carrier < 0] = 0
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+print(Delay.data)
+}
+Average.data("AA","LAX")
+Average.data <- function(X,Y) {
+newdata_carrier <- head(air.data[air.data$CARRIER %in% X,])
+print(newdata_carrier)
+newdata_destination <- head(air.data[air.data$DEST %in% Y,])
+print(newdata_destination)
+newdata_destination[newdata_destination < 0] = 0
+newdata_carrier[newdata_carrier < 0] = 0
+Delay.data  <- mean(newdata_destination[,7], na.rm = TRUE)
+cat("The total number of delays by carrier at a origin  at \n")
+print(Delay.data)
+}
+Average.data("AA","LAX")
+sample.data.yahoo <- read.csv(file = file.choose())
+sample.data.senti <- read.csv(file = file.choose())
+View(sample.data.senti)
+View(sample.data.yahoo)
+View(sample.data.senti)
+View(sample.data.yahoo)
+View(sample.data.senti)
+View(sample.data.yahoo)
+sample.merged <- merge(x = sample.data.yahoo, y = sample.data.senti, by = "Date",as.x = TRUE)
+View(sample.merged)
+out <- "C:/Users/Michael Propp/Desktop/Y+Merge//"
+write.csv(sample.merged,file=file.path(out,"Company.ICPT.csv"))
+out <- "C:/Users/Michael Propp/Desktop/Y+Merge/"
+write.csv(sample.merged,file=file.path(out,"Company.ICPT.csv"))
+sample.data.yahoo <- read.csv(file = file.choose())
+sample.data.senti <- read.csv(file = file.choose())
+rm(sample.merged)
+View(sample.data.senti)
+View(sample.data.yahoo)
+sample.merged <- merge(x = sample.data.yahoo, y = sample.data.senti, by = "Date",as.x = TRUE)
+View(sample.merged)
+out <- "C:/Users/Michael Propp/Desktop/Y+Merge/"
+write.csv(sample.merged,file=file.path(out,"Company.Exel.csv"))
+out <- "C:/Users/Michael Propp/Desktop/Y+Merge/"
+write.csv(sample.merged,file=file.path(out,"Company.Exel.csv"))
+sample.data1 <- read.csv(file = file.choose())
+names(sample.data1)
+View(sample.data1)
+A <- sample.data1$SENTIMENT_STRENGTH_91D
+B <- sample.data1$SENTIMENT_VOLUME_91D
+E <- sample.data1$ABNORMAL_SENTIMENT_VOLUME_91D
+G <- sample.data1$ABNORMAL_NEWS_VOLUME_1D
+H <- sample.data1$Adj.Close
+J <- sample.data1$Volume
+max(A)
+min(A)
+AC <- max(A) - min(A)
+AC
+Senti_str <- as.data.frame(((A)-min(A))/AC)
+names(Senti_str)<-"Senti_str"
+View(Senti_str)
+# A is done
+#############################################
+# B starts
+class(B)
+str(B)
+max(B)
+min(B)
+BC <- max(B)-min(B)
+BC
+# We are subtratcing the value of max and min to get a variable
+Senti_volume <- as.data.frame(((B)-min(B))/BC)
+names(Senti_volume)<-"Senti_volume"
+#B ends
+#############################
+### E starts
+max(E)
+min(E)
+EC <- max(E)-min(E)
+EC
+# We are subtratcing the value of max and min to get a variable
+AB_Senti_vol <- as.data.frame(((E)-min(E))/EC)
+names(AB_Senti_vol)<-"ABAB_Senti_vol"
+######## E ends
+##################################
+###### G starts
+max(G)
+min(G)
+GC <- max(G)-min(G)
+GC
+# We are subtratcing the value of max and min to get a variable
+AB_News_Vol <- as.data.frame(((G)-min(G))/GC)
+names(AB_News_Vol)<-"AB_News_Vol"
+########### G ends
+#################################
+# H starts
+max(H)
+min(H)
+HC <- max(H)-min(H)
+HC
+# We are subtratcing the value of max and min to get a variable
+Adj.Cls <- as.data.frame(((H)-min(H))/HC)
+names(Adj.Cls)<-"Adj.Cls"
+min(Adj.Cls)
+max(Adj.Cls)
+View(Adj.Cls)
+##### H ends
+##################
+############# J starts
+JC <- max(J) - min(J)
+Volume <-as.data.frame(((J)-min(J))/JC)
+min(J)
+max(J)
+View(Volume)
+names(Volume) <- "Volume"
+new.sample.data.Array <- cbind(sample.data1$Date,Senti_str,Senti_volume,AB_Senti_vol,AB_News_Vol,Adj.Cls,Volume)
+# combining all the variables into a new data frame which has the normalised data
+out <- "C:/Users/Michael Propp/Desktop/Normalised data/"
+write.csv(new.sample.data.Array,file=file.path(out,"normal.ICPT.data.csv"))
+sample.data1 <- read.csv(file = file.choose())
+A <- sample.data1$SENTIMENT_STRENGTH_91D
+B <- sample.data1$SENTIMENT_VOLUME_91D
+E <- sample.data1$ABNORMAL_SENTIMENT_VOLUME_91D
+G <- sample.data1$ABNORMAL_NEWS_VOLUME_1D
+H <- sample.data1$Adj.Close
+J <- sample.data1$Volume
+max(A)
+min(A)
+AC <- max(A) - min(A)
+AC
+Senti_str <- as.data.frame(((A)-min(A))/AC)
+names(Senti_str)<-"Senti_str"
+View(Senti_str)
+# A is done
+#############################################
+# B starts
+class(B)
+str(B)
+max(B)
+min(B)
+BC <- max(B)-min(B)
+BC
+# We are subtratcing the value of max and min to get a variable
+Senti_volume <- as.data.frame(((B)-min(B))/BC)
+names(Senti_volume)<-"Senti_volume"
+#B ends
+#############################
+### E starts
+max(E)
+min(E)
+EC <- max(E)-min(E)
+EC
+# We are subtratcing the value of max and min to get a variable
+AB_Senti_vol <- as.data.frame(((E)-min(E))/EC)
+names(AB_Senti_vol)<-"ABAB_Senti_vol"
+######## E ends
+##################################
+###### G starts
+max(G)
+min(G)
+GC <- max(G)-min(G)
+GC
+# We are subtratcing the value of max and min to get a variable
+AB_News_Vol <- as.data.frame(((G)-min(G))/GC)
+names(AB_News_Vol)<-"AB_News_Vol"
+########### G ends
+#################################
+# H starts
+max(H)
+min(H)
+HC <- max(H)-min(H)
+HC
+# We are subtratcing the value of max and min to get a variable
+Adj.Cls <- as.data.frame(((H)-min(H))/HC)
+names(Adj.Cls)<-"Adj.Cls"
+min(Adj.Cls)
+max(Adj.Cls)
+View(Adj.Cls)
+##### H ends
+##################
+############# J starts
+JC <- max(J) - min(J)
+Volume <-as.data.frame(((J)-min(J))/JC)
+min(J)
+max(J)
+View(Volume)
+names(Volume) <- "Volume"
+new.sample.data.Array <- cbind(sample.data1$Date,Senti_str,Senti_volume,AB_Senti_vol,AB_News_Vol,Adj.Cls,Volume)
+# combining all the variables into a new data frame which has the normalised data
+out <- "C:/Users/Michael Propp/Desktop/Normalised data/"
+write.csv(new.sample.data.Array,file=file.path(out,"normal.Exel.csv"))

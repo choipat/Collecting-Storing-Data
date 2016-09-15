@@ -1,0 +1,512 @@
+assign(file_list[i],
+read.csv(paste(folder, file_list[i], sep=''))
+)}
+file_list = list.files(path="C:/Users/Michael Propp/Desktop/Sentiment data/RPNA_2013_4.0-Indicators-Equities/1530-NYC", pattern=".csv")
+folder="C:/Users/Michael Propp/Desktop/Sentiment data/RPNA_2013_4.0-Indicators-Equities/1530-NYC/"
+for (i in 1:length(file_list)){
+assign(file_list[i],
+read.csv(paste(folder, file_list[i], sep=''))
+)}
+mydata.1 <- Jan.2013.csv
+mydata.2 <- Feb.2013.csv
+mydata.3 <- Mar.2013.csv
+mydata.4 <- Apr.2013.csv
+mydata.5 <- May.2013.csv
+mydata.6 <- June.2013.csv
+mydata.7 <- July.2013.csv
+mydata.8 <- Aug.2013.csv
+mydata.9 <- Sept.2013.csv
+mydata.10 <- Oct.2013.csv
+mydata.11 <- Nov.2013.csv
+mydata.12 <- Dec.2013.csv
+dir.create("C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013", showWarnings = TRUE, recursive = FALSE)
+sample.data.1<- mydata.1[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.1 <-mydata.1[which(sample.data.1$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013/"
+write.csv(newdata.1,file=file.path(out,"data.1.csv"))
+sample.data.2<- mydata.2[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.2 <-mydata.2[which(sample.data.2$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013/"
+write.csv(newdata.2,file=file.path(out,"data.2.csv"))
+sample.data.3<- mydata.3[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.3 <-mydata.3[which(sample.data.3$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013/"
+write.csv(newdata.3,file=file.path(out,"data.3.csv"))
+sample.data.4<- mydata.4[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.4 <-mydata.4[which(sample.data.4$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013/"
+write.csv(newdata.4,file=file.path(out,"data.4.csv"))
+sample.data.5<- mydata.5[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.5 <-mydata.5[which(sample.data.5$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013/"
+write.csv(newdata.5,file=file.path(out,"data.5.csv"))
+sample.data.6<- mydata.6[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.6 <- mydata.6[which(sample.data.6$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013/"
+write.csv(newdata.6,file=file.path(out,"data.6.csv"))
+View(newdata.6)
+sample.data.7<- mydata.7[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.7 <- mydata.7[which(sample.data.7$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013/"
+write.csv(newdata.7,file=file.path(out,"data.7.csv"))
+sample.data.8<- mydata.8[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.8 <-mydata.8[which(sample.data.8$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013/"
+write.csv(newdata.8,file=file.path(out,"data.8.csv"))
+sample.data.9<- mydata.9[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.9 <-mydata.9[which(sample.data.9$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013/"
+write.csv(newdata.9,file=file.path(out,"data.9.csv"))
+sample.data.10<- mydata.10[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.10 <-mydata.10[which(sample.data.10$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013/"
+write.csv(newdata.10,file=file.path(out,"data.10.csv"))
+sample.data.11<- mydata.11[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.11 <-mydata.11[which(sample.data.11$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013/"
+write.csv(newdata.11,file=file.path(out,"data.11.csv"))
+sample.data.12<- mydata.12[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.12 <-mydata.12[which(sample.data.12$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013/"
+write.csv(newdata.12,file=file.path(out,"data.12.csv"))
+file_list = list.files(path="C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013", pattern=".csv")
+folder="C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2013/"
+for (i in 1:length(file_list)){
+assign(file_list[i],
+read.csv(paste(folder, file_list[i], sep=''))
+)}
+data.2012 <- rbind(data.1.csv,data.2.csv,data.3.csv,data.4.csv,data.5.csv,
+data.6.csv,data.7.csv,data.8.csv,data.9.csv,
+data.10.csv,data.11.csv,data.12.csv)
+View(data.2012)
+out <- "C:/Users/Michael Propp/Desktop/merge/"
+write.csv(data.2012,file=file.path(out,"company.Relypsa.2013.csv"))
+# Reading the files
+file_list = list.files(path="C:/Users/Michael Propp/Desktop/Sentiment data/RPNA_2014_4.0-Indicators-Equities/1530-NYC", pattern=".csv")
+folder="C:/Users/Michael Propp/Desktop/Sentiment data/RPNA_2014_4.0-Indicators-Equities/1530-NYC/"
+for (i in 1:length(file_list)){
+assign(file_list[i],
+read.csv(paste(folder, file_list[i], sep=''))
+)}
+mydata.1 <- Jan.2014.csv
+mydata.2 <- Feb.2014.csv
+mydata.3 <- Mar.2014.csv
+mydata.4 <- Apr.2014.csv
+mydata.5 <- May.2014.csv
+mydata.6 <- June.2014.csv
+mydata.7 <- July.2014.csv
+mydata.8 <- Aug.2014.csv
+mydata.9 <- Sept.2014.csv
+mydata.10 <- Oct.2014.csv
+mydata.11 <- Nov.2014.csv
+mydata.12 <- Dec.2014.csv
+dir.create("C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014", showWarnings = TRUE, recursive = FALSE)
+sample.data.1<- mydata.1[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.1 <-mydata.1[which(sample.data.1$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014/"
+write.csv(newdata.1,file=file.path(out,"data.1.csv"))
+sample.data.2<- mydata.2[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.2 <-mydata.2[which(sample.data.2$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014/"
+write.csv(newdata.2,file=file.path(out,"data.2.csv"))
+sample.data.3<- mydata.3[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.3 <-mydata.3[which(sample.data.3$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014/"
+write.csv(newdata.3,file=file.path(out,"data.3.csv"))
+sample.data.4<- mydata.4[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.4 <-mydata.4[which(sample.data.4$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014/"
+write.csv(newdata.4,file=file.path(out,"data.4.csv"))
+sample.data.5<- mydata.5[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.5 <-mydata.5[which(sample.data.5$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014/"
+write.csv(newdata.5,file=file.path(out,"data.5.csv"))
+sample.data.6<- mydata.6[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.6 <- mydata.6[which(sample.data.6$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014/"
+write.csv(newdata.6,file=file.path(out,"data.6.csv"))
+View(newdata.6)
+sample.data.7<- mydata.7[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.7 <- mydata.7[which(sample.data.7$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014/"
+write.csv(newdata.7,file=file.path(out,"data.7.csv"))
+sample.data.8<- mydata.8[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.8 <-mydata.8[which(sample.data.8$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014/"
+write.csv(newdata.8,file=file.path(out,"data.8.csv"))
+sample.data.9<- mydata.9[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.9 <-mydata.9[which(sample.data.9$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014/"
+write.csv(newdata.9,file=file.path(out,"data.9.csv"))
+sample.data.10<- mydata.10[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.10 <-mydata.10[which(sample.data.10$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014/"
+write.csv(newdata.10,file=file.path(out,"data.10.csv"))
+sample.data.11<- mydata.11[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.11 <-mydata.11[which(sample.data.11$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014/"
+write.csv(newdata.11,file=file.path(out,"data.11.csv"))
+sample.data.12<- mydata.12[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.12 <-mydata.12[which(sample.data.12$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014/"
+write.csv(newdata.12,file=file.path(out,"data.12.csv"))
+file_list = list.files(path="C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014", pattern=".csv")
+folder="C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2014/"
+for (i in 1:length(file_list)){
+assign(file_list[i],
+read.csv(paste(folder, file_list[i], sep=''))
+)}
+data.2012 <- rbind(data.1.csv,data.2.csv,data.3.csv,data.4.csv,data.5.csv,
+data.6.csv,data.7.csv,data.8.csv,data.9.csv,
+data.10.csv,data.11.csv,data.12.csv)
+View(data.2012)
+out <- "C:/Users/Michael Propp/Desktop/merge/"
+write.csv(data.2012,file=file.path(out,"company.Relypsa.2014.csv"))
+file_list = list.files(path="C:/Users/Michael Propp/Desktop/Sentiment data/RPNA_2015_4.0-Indicators-Equities/1530-NYC", pattern=".csv")
+folder="C:/Users/Michael Propp/Desktop/Sentiment data/RPNA_2015_4.0-Indicators-Equities/1530-NYC/"
+for (i in 1:length(file_list)){
+assign(file_list[i],
+read.csv(paste(folder, file_list[i], sep=''))
+)}
+mydata.1 <- Jan.2015.csv
+mydata.2 <- Feb.2015.csv
+mydata.3 <- Mar.2015.csv
+mydata.4 <- Apr.2015.csv
+mydata.5 <- May.2015.csv
+mydata.6 <- June.2015.csv
+dir.create("C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2015", showWarnings = TRUE, recursive = FALSE)
+sample.data.1<- mydata.1[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.1 <-mydata.1[which(sample.data.1$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2015/"
+write.csv(newdata.1,file=file.path(out,"data.1.csv"))
+sample.data.2<- mydata.2[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.2 <-mydata.2[which(sample.data.2$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2015/"
+write.csv(newdata.2,file=file.path(out,"data.2.csv"))
+sample.data.3<- mydata.3[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.3 <-mydata.3[which(sample.data.3$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2015/"
+write.csv(newdata.3,file=file.path(out,"data.3.csv"))
+sample.data.4<- mydata.4[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.4 <-mydata.4[which(sample.data.4$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2015/"
+write.csv(newdata.4,file=file.path(out,"data.4.csv"))
+sample.data.5<- mydata.5[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.5 <-mydata.5[which(sample.data.5$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2015/"
+write.csv(newdata.5,file=file.path(out,"data.5.csv"))
+sample.data.6<- mydata.6[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.6 <- mydata.6[which(sample.data.6$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2015/"
+write.csv(newdata.6,file=file.path(out,"data.6.csv"))
+View(newdata.6)
+sample.data.7<- mydata.7[,c("TIMESTAMP_UTC",
+"RP_ENTITY_ID","SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D","ENTITY_NAME",
+"ABNORMAL_SENTIMENT_VOLUME_91D",
+"SENTIMENT_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",
+"COUNTRY_CODE","AVERAGE_SENTIMENT_1D","SENTIMENT_VOLUME_1D",
+"NEWS_VOLUME_1D","ABNORMAL_NEWS_VOLUME_1D",	"PRODUCT_KEY")]
+newdata.7 <- mydata.7[which(sample.data.7$RP_ENTITY_ID=='B024DA'),]
+out <- "C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2015/"
+write.csv(newdata.7,file=file.path(out,"data.7.csv"))
+file_list = list.files(path="C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2015", pattern=".csv")
+folder="C:/Users/Michael Propp/Desktop/Out Sdata/AAA/Relypsa/2015/"
+for (i in 1:length(file_list)){
+assign(file_list[i],
+read.csv(paste(folder, file_list[i], sep=''))
+)}
+data.2012 <- rbind(data.1.csv,data.2.csv,data.3.csv,data.4.csv,data.5.csv,
+data.6.csv)
+out <- "C:/Users/Michael Propp/Desktop/merge/"
+write.csv(data.2012,file=file.path(out,"company.Relypsa.2015.csv"))
+A <- read.csv(file = file.choose())
+A1 <- read.csv(file = file.choose())
+A2 <- read.csv(file = file.choose())
+A3 <- read.csv(file = file.choose())
+A4 <- rbind(A,A1,A2,A3)
+out <- "C:/Users/Michael Propp/Desktop/merge/To do/"
+write.csv(A4,file=file.path(out,"company.Relypsa.csv"))
+sample.dat.merge <- read.csv(file = file.choose())
+sample.dat.yahoo <- read.csv(file = file.choose())
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = Date,as.x = TRUE)
+View(sample.dat.yahoo)
+View(sample.dat.merge)
+View(sample.dat.yahoo)
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date",as.x = TRUE)
+View(sample.data1)
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date",as.x = TRUE)
+sample.data1 <- rbind(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date",as.x = TRUE)
+sample.data1 <- cbind(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date",as.x = TRUE)
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date",as.x = TRUE)
+View(sample.dat.yahoo)
+View(sample.dat.merge)
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date",as.x = TRUE)
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date",as.x = TRUE)
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date",as.x = TRUE)
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date",as.x = TRUE)
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date",as.x = TRUE)
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date",as.x = TRUE)
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date",as.x = TRUE)
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date")
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date")
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = Date)
+sample.dat.merge <- read.csv(file = file.choose())
+sample.dat.yahoo <- read.csv(file = file.choose())
+View(sample.dat.merge)
+View(sample.dat.merge)
+View(sample.dat.yahoo)
+sample.dat.yahoo <- read.csv(file = file.choose())
+View(sample.dat.yahoo)
+sample.data1 <- merge(x=sample.dat.yahoo,y = sample.dat.merge,by = "Date", as.x = TRUE)
+View(sample.data1)
+names(sample.data1)
+A <- sample.data1$SENTIMENT_STRENGTH_91D
+B <- sample.data1$SENTIMENT_VOLUME_91D
+E <- sample.data1$ABNORMAL_SENTIMENT_VOLUME_91D
+G <- sample.data1$ABNORMAL_NEWS_VOLUME_1D
+H <- sample.data1$Adj.Close
+J <- sample.data1$Volume
+max(A)
+min(A)
+AC <- max(A) - min(A)
+AC
+Senti_str <- as.data.frame(((A)-min(A))/AC)
+names(Senti_str)<-"Senti_str"
+View(Senti_str)
+class(B)
+str(B)
+max(B)
+min(B)
+BC <- max(B)-min(B)
+BC
+# We are subtratcing the value of max and min to get a variable
+Senti_volume <- as.data.frame(((B)-min(B))/BC)
+names(Senti_volume)<-"Senti_volume"
+#B ends
+#############################
+### E starts
+max(E)
+min(E)
+EC <- max(E)-min(E)
+EC
+# We are subtratcing the value of max and min to get a variable
+AB_Senti_vol <- as.data.frame(((E)-min(E))/EC)
+names(AB_Senti_vol)<-"ABAB_Senti_vol"
+######## E ends
+##################################
+###### G starts
+max(G)
+min(G)
+GC <- max(G)-min(G)
+GC
+# We are subtratcing the value of max and min to get a variable
+AB_News_Vol <- as.data.frame(((G)-min(G))/GC)
+names(AB_News_Vol)<-"AB_News_Vol"
+########### G ends
+#################################
+# H starts
+max(H)
+min(H)
+HC <- max(H)-min(H)
+HC
+# We are subtratcing the value of max and min to get a variable
+Adj.Cls <- as.data.frame(((H)-min(H))/HC)
+names(Adj.Cls)<-"Adj.Cls"
+min(Adj.Cls)
+max(Adj.Cls)
+View(Adj.Cls)
+##### H ends
+##################
+############# J starts
+JC <- max(J) - min(J)
+Volume <-as.data.frame(((J)-min(J))/JC)
+min(J)
+max(J)
+View(Volume)
+names(Volume) <- "Volume"
+new.sample.data.Array <- cbind(sample.data1$Date,Senti_str,Senti_volume,AB_Senti_vol,AB_News_Vol,Adj.Cls,Volume)
+out <- "C:/Users/Michael Propp/Desktop/Normalised data/"
+write.csv(new.sample.data.Array,file=file.path(out,"normal.Relapsy.csv"))
+out <- "C:/Users/Michael Propp/Desktop/Normalised data/"
+write.csv(new.sample.data.Array,file=file.path(out,"normal.Relapsy.csv"))

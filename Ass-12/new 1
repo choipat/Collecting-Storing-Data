@@ -1,0 +1,61 @@
+setwd("C:/Users/Michael Propp/Desktop/Information Assignemnt/Ass-10/")
+library(RSQLite)
+
+db <- dbConnect(SQLite(),dbname="books.Data.new.sqlite")
+book_data <- read.csv("bookData.csv", header=TRUE)
+#dbGetQuery(db, " SELECT [Student Name], [Student Email] from Students")
+names(book_data)
+
+authors <- unique(cbind.data.frame(as.character(book_data$AuthorName),as.character(book_data$AuthorDetails))) # removing 
+#View(authors)
+
+colnames(authors)<- c("Author Name", "Author Details")
+authors$AuthorID <- sample(1:nrow(authors)) 
+
+dbWriteTable(conn = db, name = "Authors", value = authors,
+             row.names = FALSE)
+
+#dbReadTable(db,"Authors")
+names(authors)
+
+
+merge.data <- merge(book_data,authors,by.x=c("AuthorName","AuthorDetails"),
+                    by.y=c("Author Name","Author Details"))
+View(merge.data)
+names(merge.data)
+
+books <- unique(cbind.data.frame(as.character(book_data$BookName),as.character(book_data$BookGenre))) #removing redundancy
+View(books)
+
+names(books)
+
+colnames(books)<- c("BookName", "BookGenre")
+books$bookID<-sample(1:nrow(books))
+names(books)
+finalmerge<- merge(merge.data,books, by.x=c("BookName","BookGenre"),by.y=c("BookName","BookGenre"))
+View(finalmerge)
+names(finalmerge)
+
+dbWriteTable(conn = db,name = 'FinalTable',value = finalmerge)
+
+
+dbGetQuery(db, "SELECT [AuthorName],[BookGenre] from FinalTable")
+
+students <- unique(cbind.data.frame(as.character(book_data$StudentName),
+                                    as.character(book_data$StudentEmail),
+                                    as.character(book_data$StudentID)))
+
+colnames(students) <- c("Studentname","Studentemail","StudentID")
+students$stuID <- sample(1:nrow(students))
+names(students)
+names(finalmerge)
+
+complete.merge <- merge(finalmerge,students,by.x = c("StudentName","StudentEmail","StudentID"),
+                        by.y = c("Studentname","Studentemail","StudentID"))
+dbWriteTable(conn = db, name = "Student_Table",value = complete.merge)
+
+dbGetQuery(db, "SELECT [AuthorName],[BookGenre],[Studentname] from Student_Table")
+
+head(dbReadTable(db,"Student_Table"))
+dbListFields(db,"Student_Table")
+

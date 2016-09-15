@@ -1,0 +1,39 @@
+query1<- dbSendQuery(db, "Select [Student Name], [Student Email], [Book Name],
+ [Book Genre], [Author Name] from Students
+ INNER JOIN Books ON Students.BookID = Books.BookID
+ INNER JOIN Authors ON Books.AuthorID = Authors.AuthorID")
+
+
+query1 <- dbSendQuery(database, "SELECT [Type of airplane] [Pilot.warned.of.birds.or.wildlife.] from Operations_table
+INNER JOIN Aircraft_new_table ON Operations_table.Aircraft_data_newID = Aircraft_new_table.Aircraft_data_newID
+INNER JOIN Birdstrike_new_table ON Operations_table.BirdstrikeID = Birdstrike_new_table.BirdstrikeID
+INNER JOIN Wildlife_table ON Operations_table.ID = Wildlife_table.ID"
+)
+
+
+
+query.new <- dbSendQuery(database, 
+"SELECT [Type of airplane] [Pilot.warned.of.birds.or.wildlife.] from Operations_table
+INNER JOIN Aircraft_new_table ON Operations_table.Aircraft_data_newID = Aircraft_new_table.Aircraft_data_newID
+INNER JOIN Birdstrike_new_table ON Operations_table.BirdstrikeID = Birdstrike_new_table.BirdstrikeID
+INNER JOIN Wildlife_table ON Operations_table.ID = Wildlife_table.ID 
+WHERE [Type of airplane]='Helicopter'")
+
+
+query_airplane <- dbSendQuery(database, 
+                         "SELECT [Type of airplane] [Pilot.warned.of.birds.or.wildlife.] from Operations_table
+    INNER JOIN Aircraft_new_table ON Operations_table.Aircraft_data_newID = Aircraft_new_table.Aircraft_data_newID
+    INNER JOIN Birdstrike_new_table ON Operations_table.BirdstrikeID = Birdstrike_new_table.BirdstrikeID
+    INNER JOIN Wildlife_table ON Operations_table.ID = Wildlife_table.ID
+WHERE [Pilot.warned.of.birds.or.wildlife.]='1'")
+
+
+
+dbFetch(query.airplane,5)
+
+
+
+
+
+colnames(Operations_merge_final)
+[When..Time..HHMM.],[Wildlife..Species]

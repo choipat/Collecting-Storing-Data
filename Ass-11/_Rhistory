@@ -1,0 +1,513 @@
+}
+function(X){
+for (i in X) {
+if (i<0) {
+j == i*0
+}
+}
+}
+function(X){
+if (i < 0) {
+i = i*0
+}
+}
+library(XML)
+url.data <- xmlTreeParse("http://www.cs.washington.edu/research/xmldatasets/data/auctions/ebay.xml")
+bid.data <- function(value){
+bid_data <- xpathApply(value,"//num_bids",xmlValue)
+bid_data_final <- which(bid_data>5)
+cat("The number of auctions having more than 5 bids are")
+cat("\n")
+print(length(bid_data_final))
+}
+bid.data(url.data)
+bid.data <- function(value){
+bid_data <- xpathApply(value,"//num_bids",xmlValue)
+bid_data_final <- which(bid_data>5)
+cat("The number of auctions having more than 5 bids are")
+cat("\n")
+print(length(bid_data_final))
+}
+bid.data(url.data)
+View(url.data)
+url.data
+bid.data <- function(value){
+bid_data <- xpathApply(value,"//num_bids",xmlValue)
+bid_data
+}
+bid.data(url.data)
+bid_data <- xpathApply(url.data,"//num_bids",xmlValue)
+url.data
+url.data
+class(url.data)
+url.data <- xmlTreeParse("http://www.cs.washington.edu/research/xmldatasets/data/auctions/ebay.xml",useInternalNodes = T)
+class(url.data)
+bid_data <- xpathApply(url.data,"//num_bids",xmlValue)
+bid.data <- function(value){
+bid_data <- xpathApply(value,"//num_bids",xmlValue)
+bid_data_final <- which(bid_data>5)
+cat("The number of auctions having more than 5 bids are")
+cat("\n")
+print(length(bid_data_final))
+}
+bid.data(url.data)
+trading.data <-"http://www.barchartmarketdata.com/data-samples/getHistory15.xml"
+trading.data
+View(trading.data)
+class(trading.data)
+trading.data <- xmlToDataFrame(trading.data)
+View(trading.data)
+Highest.closing.price <- function(price) {
+price <- max(trading.data$high,na.rm = TRUE)
+cat("The highest security closing price is ")
+cat("\n")
+print(price)
+}
+Highest.closing.price(trading.data)
+trading.volume <- function(volume) {
+volume <- sum(as.numeric(trading.data$volume), na.rm = TRUE)
+cat("Total volume traded is")
+cat("\n")
+print(volume)
+}
+trading.volume(trading.data)
+sample.data <- trading.data
+View(sample.data)
+View(sample.data)
+sample.data <- trading.data[,c(4,10)]
+View(sample.data)
+sample.data <- na.omit(sample.data)
+View(sample.data)
+sample.data[1]
+sample.data[2]
+View(sample.data)
+92/4
+A <- matrix(,4)
+View(A)
+sample.data.volume <- list(sample.data[2])
+sample.data.volume
+time <- matrix(,4)
+for (i in length(sample.data.volume) ) {
+time[1,i] <-sum(sample.data.volume([[i]]))
+print(time)
+}
+ls()
+ls(time,A)
+ls(A)
+rm(A,time)
+rm(sample.data.volume)
+volume <- c(sample.data[2])
+length(volume)
+class(volume)
+rm(volume)
+rm(time)
+volume.sample <- as.vector(sample.data[2])
+class(volume.sample)
+View(volume.sample)
+rm(volume.sample)
+volume.sample <- c(sample.data[2])
+rm(volume.sample)
+x <- sample(0:20, 100, replace=TRUE)
+x
+A <- cut(x, breaks=c(0, 10, 20), include.lowest=TRUE)
+A
+A[1]
+rm(A,x)
+sample.data.volume <- c(sample.data[2])
+rm(sample.data.volume)
+sample.data[2]
+class(sample.data[2])
+A <- c(sample.data[2])
+class(A)
+rm(A)
+A <- split(sample.data[2], ceiling(seq_along(sample.data[2])/4))
+A
+A <- split(sample.data[2],(seq_along(sample.data[2])/4))
+A
+A1 <- c(sample.data[2])
+A <- split(A1,(seq_along(A1)/4))
+A
+A[1]
+A[1:4]
+rm(A)
+rm(A1)
+sample.data[2]
+class(sample.data[2])
+as.vector(sample.data[[2]])
+A <- as.vector(sample.data[[2]])
+class(A)
+A1 <- 4
+chunk <- function(x, n) split(x, sort(rank(x) %% n))
+chunk(A,A1)
+chunk[[1]]
+chunk[1]
+rm(A,A1,chunk,chunk1)
+rm(A,A1,chunk)
+split.volume <- split(sample.data$volume,max = 4)
+adjnvadljkv
+split.volume <- split(sample.data$volume,max = 4)
+split.volume <- split(sample.data$volume)
+volume <- numeric(length(sample.data[2]))
+rm(volume)
+timeinterval <- sample.data$timestamp
+volume <- numeric(length(sample.data$volume))
+for (i in seq_along(sample.data)) {
+volume[i] <- mean(sample.data$timestamp[sample.data$volume == timeinterval[i]])
+}
+rm(timeinterval,volume)
+length(sample.data$volume)
+length(sample.data$volume/4)
+A <- unname(tapply(sample.data$volume,(seq_along(sample.data$volume)-1) %/% 4, sum))/4
+A <- unname(tapply(sample.data$volume,(seq_along(sample.data$volume)-1) %/% 4, sum))/4
+A <- unname(tapply(sample.data,(seq_along(sample.data$volume)-1) %/% 4, sum))/4
+trade.volume.data <- function(data) {
+volume.data <- as.numeric(trading.data$volume)
+volume.data <- volume.data[!is.na(volume.data)]
+volme_data <- unname(tapply(volume.data,(seq_along(volume.data)-1) %/% 4, sum))/4
+cat("The average trading volumes at each interval is")
+cat("\n")
+print(volume.data)
+}
+trade.volume.data(trading.data)
+trade.volume.data(trading.data)
+A <- tapply(sample.data$volume, rep(1:(length(sample.data$volume)), each = 4), sum)
+A <- tapply(sample.data$volume, rep(1:(length(sample.data$volume)/4), each = 4), sum)
+sample.data.a <- as.numeric(sample.data$volume)
+A <- tapply(sample.data.a, rep(1:(length(sample.data.a)/4), each = 4), sum)
+A
+class(A)
+A1 <- data.frame(A)
+A1
+View(A1)
+#creating a function trading.volume to find
+#the sum of the total volume traded
+#volume returns the sum of the total traded volume
+trading.volume <- function(volume) {
+volume <- sum(as.numeric(trading.data$volume), na.rm = TRUE)
+cat("Total volume traded is")
+cat("\n")
+print(volume)
+}
+trading.volume(trading.data)
+########################################################
+#C)
+trade.volume.data <- function(data) {
+volume.data <- as.numeric(trading.data$volume)
+#volume.data <- volume.data[!is.na(volume.data)]
+volume.data <- na.omit(volume.data)
+volme_data <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+cat("The average trading volumes at each interval is")
+cat("\n")
+print(volume.data)
+}
+trade.volume.data <- function(data) {
+volume.data <- as.numeric(trading.data$volume)
+#volume.data <- volume.data[!is.na(volume.data)]
+volume.data <- na.omit(volume.data)
+volme_data <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+cat("The average trading volumes at each interval is")
+cat("\n")
+print(volume.data)
+}
+trade.volume.data <- function(data) {
+volume.data <- as.numeric(trading.data$volume)
+volume.data <- volume.data[!is.na(volume.data)]
+volume.data <- na.omit(volume.data)
+volme_data <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+cat("The average trading volumes at each interval is")
+cat("\n")
+print(volume.data)
+}
+trade.volume.data <- function(data) {
+volume.data <- as.numeric(trading.data$volume)
+#volume.data <- volume.data[!is.na(volume.data)]
+volume.data <- na.omit(volume.data)
+volme_data <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+cat("The average trading volumes at each interval is")
+cat("\n")
+print(volume.data)
+}
+trade.volume.data(trading.data)
+volume.trade <- function(volume){
+volume <- trading.data$volume
+volume <- na.omit(volume)
+volme_data <- tapply(volume, rep(1:length(volume)/4),each = 4),sum)
+print(volume_data)
+}
+volume.trade <- function(volume){
+volume <- trading.data$volume
+volume <- na.omit(volume)
+volume_data <- tapply(volume, rep(1:length(volume)/4),each = 4),sum)
+print(volume_data)
+}
+)
+trade.volume.data <- function(data) {
+volume.data <- as.numeric(trading.data$volume)
+#volume.data <- volume.data[!is.na(volume.data)]
+volume.data <- na.omit(volume.data)
+volume_data <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+cat("The average trading volumes at each interval is")
+cat("\n")
+print(volume.data)
+}
+trade.volume.data(trading.data)
+volume.trade <- function(volume){
+volume <- trading.data$volume
+volume <- na.omit(volume)
+volume_data <- tapply(volume, rep(1:length(volume)/4),each = 4),sum)
+print(volume_data)
+}
+volume.trade <- function(volume){
+volume <- trading.data$volume
+volume <- na.omit(volume)
+volume.data <- as.numeric(volume)
+volume_data <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+print(volume_data)
+}
+volume.trade <- function(volume){
+volume <- trading.data$volume
+volume <- na.omit(volume)
+volume.data.trade <- as.numeric(volume)
+volume.data.trade <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+print(volume.data.trade)
+}
+volume.data <- trading.data
+volume.data
+volume.trade <- function(volume_trade){
+volume_trade <- volume.data[,c(4,10)]
+volume_trade <- as.numeric(volume.data$volume)
+volume_trade <- na.omit(volume_trade)
+volume_trade
+}
+volume.data(trading.data)
+volume.trade <- function(volume_trade){
+volume_trade <- volume.data[,c(4,10)]
+volume_trade <- as.numeric(volume.data$volume)
+volume_trade <- na.omit(volume_trade)
+volume_trade
+}
+volume.trade <- function(volume_trade){
+volume_trade <- volume.data[,c(4,10)]
+volume_trade <- as.numeric(volume.data$volume)
+volume_trade <- na.omit(volume_trade)
+volume_trade
+}
+volume.data(trading.data)
+yahoodata <- readLines("http://finance.yahoo.com/q/hp?s=GOOG+Historical+Prices")
+yahoodata
+library(openxlsx)
+library(XML)
+yahoodata.finance <-xmlParse("http://finance.yahoo.com/q/hp?s=GOOG+Historical+Prices")
+yahoodata.finance <- xmlParse("http://finance.yahoo.com/q/hp?s=GOOG+Historical+Prices")
+yahoodata
+ricker  <- function(x, a=1,b=1){
+a*x* exp(-b*x)
+}
+yvals <- sapply(xvec,ricker)
+ricker  <- function(x, a=1,b=1){
+a*x* exp(-b*x)
+}
+ricker(3)
+dataset <- sample(1:10,replace = T)
+ricker(dataset)
+X <- ricker(dataset)
+y <- sample(1,2,repeat = 10,replace = T)
+y <- sample(1,2,10,replace = T)
+y
+rm(y)
+y <- sample(1:2,10,replace = T)
+plot(X~y)
+X <- ricker(dataset)
+X
+plot(y~X)
+plot(y~X)
+rm(y)
+y <- ricker(sample(1:2,10,replace = T))
+plot(X~y)
+plot(y~X)
+rm(X,y)
+dataset <- sample(1:10,replace = F)
+dataset
+rm(dataset)
+variable_1 <- c(1:10,replace=F)
+ricker  <- function(x, a=1,b=1){
+variable_1
+adcvad
+"
+"
+variable_1
+variable_1 <- c(1:10,replace=F)
+variable_1
+rm(variable_1)
+variable_1 <- c(1:10)
+variable_1
+variable_2 <- c(variable_1^2)
+variable_2
+plot(variable_2~variable_1)
+plot(variable_1~variable_2)
+A_function <- function(x,y){
+x <- c(1:10)
+y <- sample(1:10,replace = F)
+Z <- x+y
+print(Z)
+}
+A_function(A,B)
+A_function(pramod,rahul)
+pramod
+A_function
+A_function(1,2)
+A_function <- function(x,y){
+x <- c(1:10)
+y <- sample(10:20:,replace = T)
+Z <- x+y
+print(Z)
+}
+A_function <- function(x,y){
+x <- c(1:10)
+y <- sample(10:20:,replace = T)
+Z <- x+y
+print(Z)
+}
+A_function <- function(x,y){
+x <- c(1:10)
+y <- sample(10:20:,replace = T)
+Z <- x+y
+print(Z)
+}
+A_function <- function(x,y){
+x <- c(1:10)
+y <- sample(10:20:,replace = T)
+Z <- x+y
+print(Z)
+}
+A_function <- function(x,y){
+x <- c(1:10)
+y <- sample(10:20,replace = T)
+Z <- x+y
+print(Z)
+}
+A_function(prk,pramod)
+A_function <- function(x,y){
+x <- c(1:10)
+y <- sample(11:21,replace = T)
+Z <- x+y
+print(Z)
+}
+A_function(prk,pramod)
+A_function <- function(x,y){
+x <- c(1:10)
+y <- sample(11:22,replace = T)
+Z <- x+y
+print(Z)
+}
+A_function(prk,pramod)
+rm(A_function)
+X <- c(1:10)
+y1 <- 2* exp(-X/2)
+y2  <- 2* X * exp(-X/2)
+y3 <- X * exp(-X/2)
+y4 <- 2 * exp(-X)
+X <- c(1:10)
+y1 <- 2* exp(-X/2)
+y2  <- 2* X * exp(-X/2)
+y3 <- X * exp(-X/2)
+y4 <- 2 * exp(-X)
+plot(X,y1,type="l")
+plot(X,y1,type="l")
++ plot(X,y2,type = "l")
+plot(X,y2,type = "l")
+plot(X,y1,type="l")
+plot(X,y2,type = "l")
+plot(X,y3,type = "l")
+plot(X,y4,type = "l")
+plot(X,y1,type="l")
+plot(X,y1,type="l")
+plot(X,y2,type = "l")
+plot(X,y3,type = "l")
+plot(X,y4,type = "l")
+library(plyr)
+sample.data <- read.csv(file = file.choose())
+count(sample.data, vars=c("Group","Size"))
+count(sample.data$Wildlife..Number.struck, vars=c("2to10","Size"))
+count(sample.data$Wildlife..Number.struck, vars=c("2 to 10","Size"))
+
+library(RSQLite)
+database <- dbConnect(SQLite(),dbname="BIRD.new.sqlite")
+setwd("C:/Users/Michael Propp/Desktop/Information Assignemnt/Ass-10/")
+Aircraft_data <- read.csv("Bird Strikes.csv", header=TRUE)
+Aircraft_data_new <- unique(cbind.data.frame
+(as.character(Aircraft_data$Aircraft..Type),
+as.character(Aircraft_data$Aircraft..Make.Model),
+as.character(Aircraft_data$Aircraft..Flight.Number),
+as.character(Aircraft_data$Aircraft..Number.of.engines.)))
+colnames(Aircraft_data_new) <- c("Type of airplane","Make of moedl","Flight number", "Number of engines")
+Aircraft_data_new$Aircraft_data_newID <- sample(1:nrow(Aircraft_data_new))
+dbWriteTable(conn = database, name = "Aircraft_table", value = Aircraft_data_new,
+row.names = F)
+Aircraft_merge <- merge(Aircraft_data, Aircraft_data_new, by.x=c("Aircraft..Type",
+"Aircraft..Make.Model",
+"Aircraft..Flight.Number",
+"Aircraft..Number.of.engines."),
+by.y=c("Type of airplane",
+"Make of moedl",
+"Flight number",
+"Number of engines"))
+View(Aircraft_merge)
+View(Aircraft_data)
+Birdstrike <- unique(cbind.data.frame(as.character(Aircraft_data$Effect..Impact.to.flight),
+as.character(Aircraft_data$Effect..Other),
+as.character(Aircraft_data$Reported..Date),
+as.character(Aircraft_data$Remains.of.wildlife.collected.),
+as.character(Aircraft_data$Pilot.warned.of.birds.or.wildlife.),
+as.character(Aircraft_data$When..Time..HHMM.),
+as.character(Aircraft_data$When..Time.of.day),
+as.character(Aircraft_data$Remains.of.wildlife.sent.to.Smithsonian)))
+colnames(Birdstrike) <- c("Impact",
+"Other effect",
+"Reported Date",
+"Remians collected",
+"Pilot warned",
+"Time HHMM",
+"Time of day",
+"Smithsonian collection")
+Birdstrike$BirdstrikeID <- sample(25098:nrow(Birdstrike))
+Birdstrike$BirdstrikeID <- sample(1:32436,nrow(Birdstrike))
+dbWriteTable(conn = database , name = "Birdstrike_table", value = Birdstrike,
+row.names = F)
+dbReadTable(database ,"Birdstrike_new")
+dbReadTable(database ,"Birdstrike_table")
+dbListFields(database,"Birdstrike_table")
+dbGetQuery(database, "SELECT [Impact],[Other effect] from Birdstrike_table")
+setwd("C://Users/Michael Propp/Desktop/Information Assignemnt/Ass-11/")
+sampledata <- read.csv("newdata.final.csv",header = T)
+library(RSQLite)
+db <- dbConnect(SQLite(),dbname  = "finanace.data.sqlite")
+rm(sampledata)
+yahoo.data <- read.csv("newdata.final.csv",header = T)
+View(yahoo.data)
+close <- unique(cbind.data.frame(as.character(sampledata$Close),
+as.character(sampledata$Adj.Close)))
+close <- unique(cbind.data.frame(as.character(yahoo.data$Close),
+as.character(yahoo.data$Adj.Close)))
+View(close)
+colnames(close) <- c("Close","Adjustedclose")
+close$closeID <- sample(1:nrow(close))
+dbWriteTable(conn = db, name = "Close_table",value = close,row.names = FALSE)
+names(yahoo.data)
+merge <- merge(yahoo.data, close, by.x = c("Close","Adj.Close"),
+by.y = c("Close","Adjustedclose"))
+sentiment <- unique(cbind.data.frame(as.character(yahoo.data$SENTIMENT_STRENGTH_91D),
+as.character(yahoo.data$SENTIMENT_VOLUME_91D),
+as.character(yahoo.data$ABNORMAL_SENTIMENT_VOLUME_91D)))
+colnames(sentiment) <- c("strength","volume","sentivolume")
+sentiment$sentimentId <- sample(1268:nrow(sentiment))
+names(sentiment)
+finalmerge <- merge(merge,sentiment,
+by.x = c("SENTIMENT_STRENGTH_91D",
+"SENTIMENT_VOLUME_91D",
+"ABNORMAL_SENTIMENT_VOLUME_91D"),by.y = c("strength","volume","sentivolume"))
+dbWriteTable(conn = db , name = "Final_table",value = finalmerge)
+head(dbReadTable(db,"Final_table"))
+dbGetQuery(db, "SELECT [strength] from Final_table")
+dbListFields(db,"Final_table")
+dbGetQuery(db, "SELECT [ABNORMAL_SENTIMENT_VOLUME_91D] from Final_table")

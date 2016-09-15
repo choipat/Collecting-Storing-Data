@@ -1,0 +1,64 @@
+getwd()
+setwd("C:/Users/Michael Propp/Desktop/")
+
+install.packages("RCurl")
+
+library(RCurl)
+install.packages("ROAuth")
+
+library(ROAuth)
+install.packages("streamR")
+
+library(streamR)
+
+library(twitteR)
+install.packages("twitteR")
+
+download.file(url="http://curl.haxx.se/ca/cacert.pem", destfile="cacert.pem")
+
+
+outFile <- "tweets_sample.json"
+requestURL <- "https://api.twitter.com/oauth/request_token"
+accessURL <- "https://api.twitter.com/oauth/access_token"
+authURL <- "https://api.twitter.com/oauth/authorize"
+consumerKey <- "00bEoSR3PZsXYNqqVD2tod7Tu"
+consumerSecret <- "071ibaPu6te3ZCOpXz0yw4UJYZDvVjMjzBbaJPiS8cgqo7ZXLx"
+oauth_token <- "2974826467-90kVTtWzipocxdzMiyAEBuSdAFM1Lz1KR5jzcfT"
+oauth_token_secret <- "giVjEJdZfRrYcV0j21tPI4rbKFwTfdvOSEQgz0bMTDtq0"
+
+my_oauth <- OAuthFactory$new(   consumerKey=consumerKey,
+                                consumerSecret=consumerSecret, 
+                                requestURL=requestURL,
+                                accessURL=accessURL, authURL=authURL)                                           
+
+
+
+my_oauth$handshake(cainfo="cacert.pem")
+
+##Once executing the above code returns true.                                                                        
+##You will be given a link to authorize your application to get twitter feeds.                                     
+##Copy the link in your browser. Click on Authorize MyApplication. You will receive a pin number.                     
+##Copy the pin number and paste it in the console.                                                                  
+##Once your application has been authorized you need to register your credentials.                                  
+
+
+#registerTwitterOAuth(my_oauth)
+
+#setup_twitter_oauth(consumerKey, consumerSecret, oauth_token, oauth_token_secret, credentials_file= NULL)
+
+setup_twitter_oauth(consumerKey, consumerSecret, oauth_token, oauth_token_secret)
+
+# Press 1 to allow the file to access the credentials 
+
+##Now start reading tweets
+
+sampleStream( file=outFile, oauth=my_oauth )
+
+##Alternative: a little more advanced if you want to filter for things
+follow   <- ""    # TwitterIDs (not screennames!) of peple to follow
+track    <- "Boston,RedSoxs"  # Comma-separated list of words to filter for
+location <- c(23.786699, 60.878590, 37.097000, 77.840813)  # Geolocation of tweets to filter for (see documentation)
+
+filterStream( file.name=outFile, follow=follow, track=track, locations=location, oauth=my_oauth, timeout=10800)
+
+

@@ -1,0 +1,512 @@
+EC
+max(G)
+min(G)
+GC <- max(G)-min(G)
+GC
+max(H)
+min(H)
+HC <- max(H)-min(H)
+HC
+min(J)
+max(J)
+JC <- max(J) - min(J)
+JC
+sample.data1 <- read.csv(file = file.choose())
+View(sample.data1)
+A <- sample.data1$SENTIMENT_STRENGTH_91D
+B <- sample.data1$SENTIMENT_VOLUME_91D
+E <- sample.data1$ABNORMAL_SENTIMENT_VOLUME_91D
+G <- sample.data1$ABNORMAL_NEWS_VOLUME_1D
+H <- sample.data1$Adj.Close
+J <- sample.data1$Volume
+max(A)
+min(A)
+AC <- max(A) - min(A)
+AC
+max(B)
+min(B)
+BC <- max(B)-min(B)
+BC
+max(E)
+min(E)
+EC <- max(E)-min(E)
+EC
+max(G)
+min(G)
+GC <- max(G)-min(G)
+GC
+max(H)
+min(H)
+HC <- max(H)-min(H)
+HC
+JC <- max(J) - min(J)
+min(J)
+max(J)
+JC
+Q <- read.csv(file = file.choose())
+Q1<- head(Q)
+names(Q1)
+View(Q)
+Q1$X6[12]
+Q1$X6[4]
+View(Q1)
+Q1$X375300[4]
+View(Q1)
+Q1[4,4]
+View(Q1)
+Q1[6,4]
+Q1[4,6]
+obj<- 2.77
+obj = 2.77
+obj1 = 2.77
+class(obj1)
+class(obj)
+list()
+ls()
+seq(100,999,5)
+seq1(from = 100 , to = 999 , by= 5)
+B <- seq(from = 100 , to = 999 , by= 5)
+B
+seq(from = 100 , to = 999 , by= 5)
+air.data <- read.csv(file = file.choose(),header = TRUE,sep =",",quote = "/" )
+View(air.data)
+View(air.data)
+air.data <- head(air.data)
+View(air.data)
+View(air.data)
+View(air.data)
+View(air.data)
+View(air.data)
+A <- function(X){
+X < 0, X == 0
+}
+A <- function(X){
+if (X<0) {
+X == 0)
+}
+A <- function(X){
+if (X< 0) {
+X==0)
+}
+function(X){
+if (X< 0) {
+X==0)
+}
+function(X){
+for (i in X) {
+if (i<0) {
+j == i*0
+}
+}
+function(X){
+for (i in X) {
+if (i<0) {
+j == i*0
+}
+}
+}
+function(X){
+if (i < 0) {
+i = i*0
+}
+}
+library(XML)
+url.data <- xmlTreeParse("http://www.cs.washington.edu/research/xmldatasets/data/auctions/ebay.xml")
+bid.data <- function(value){
+bid_data <- xpathApply(value,"//num_bids",xmlValue)
+bid_data_final <- which(bid_data>5)
+cat("The number of auctions having more than 5 bids are")
+cat("\n")
+print(length(bid_data_final))
+}
+bid.data(url.data)
+bid.data <- function(value){
+bid_data <- xpathApply(value,"//num_bids",xmlValue)
+bid_data_final <- which(bid_data>5)
+cat("The number of auctions having more than 5 bids are")
+cat("\n")
+print(length(bid_data_final))
+}
+bid.data(url.data)
+View(url.data)
+url.data
+bid.data <- function(value){
+bid_data <- xpathApply(value,"//num_bids",xmlValue)
+bid_data
+}
+bid.data(url.data)
+bid_data <- xpathApply(url.data,"//num_bids",xmlValue)
+url.data
+url.data
+class(url.data)
+url.data <- xmlTreeParse("http://www.cs.washington.edu/research/xmldatasets/data/auctions/ebay.xml",useInternalNodes = T)
+class(url.data)
+bid_data <- xpathApply(url.data,"//num_bids",xmlValue)
+bid.data <- function(value){
+bid_data <- xpathApply(value,"//num_bids",xmlValue)
+bid_data_final <- which(bid_data>5)
+cat("The number of auctions having more than 5 bids are")
+cat("\n")
+print(length(bid_data_final))
+}
+bid.data(url.data)
+trading.data <-"http://www.barchartmarketdata.com/data-samples/getHistory15.xml"
+trading.data
+View(trading.data)
+class(trading.data)
+trading.data <- xmlToDataFrame(trading.data)
+View(trading.data)
+Highest.closing.price <- function(price) {
+price <- max(trading.data$high,na.rm = TRUE)
+cat("The highest security closing price is ")
+cat("\n")
+print(price)
+}
+Highest.closing.price(trading.data)
+trading.volume <- function(volume) {
+volume <- sum(as.numeric(trading.data$volume), na.rm = TRUE)
+cat("Total volume traded is")
+cat("\n")
+print(volume)
+}
+trading.volume(trading.data)
+sample.data <- trading.data
+View(sample.data)
+View(sample.data)
+sample.data <- trading.data[,c(4,10)]
+View(sample.data)
+sample.data <- na.omit(sample.data)
+View(sample.data)
+sample.data[1]
+sample.data[2]
+View(sample.data)
+92/4
+A <- matrix(,4)
+View(A)
+sample.data.volume <- list(sample.data[2])
+sample.data.volume
+time <- matrix(,4)
+for (i in length(sample.data.volume) ) {
+time[1,i] <-sum(sample.data.volume([[i]]))
+print(time)
+}
+ls()
+ls(time,A)
+ls(A)
+rm(A,time)
+rm(sample.data.volume)
+volume <- c(sample.data[2])
+length(volume)
+class(volume)
+rm(volume)
+rm(time)
+volume.sample <- as.vector(sample.data[2])
+class(volume.sample)
+View(volume.sample)
+rm(volume.sample)
+volume.sample <- c(sample.data[2])
+rm(volume.sample)
+x <- sample(0:20, 100, replace=TRUE)
+x
+A <- cut(x, breaks=c(0, 10, 20), include.lowest=TRUE)
+A
+A[1]
+rm(A,x)
+sample.data.volume <- c(sample.data[2])
+rm(sample.data.volume)
+sample.data[2]
+class(sample.data[2])
+A <- c(sample.data[2])
+class(A)
+rm(A)
+A <- split(sample.data[2], ceiling(seq_along(sample.data[2])/4))
+A
+A <- split(sample.data[2],(seq_along(sample.data[2])/4))
+A
+A1 <- c(sample.data[2])
+A <- split(A1,(seq_along(A1)/4))
+A
+A[1]
+A[1:4]
+rm(A)
+rm(A1)
+sample.data[2]
+class(sample.data[2])
+as.vector(sample.data[[2]])
+A <- as.vector(sample.data[[2]])
+class(A)
+A1 <- 4
+chunk <- function(x, n) split(x, sort(rank(x) %% n))
+chunk(A,A1)
+chunk[[1]]
+chunk[1]
+rm(A,A1,chunk,chunk1)
+rm(A,A1,chunk)
+split.volume <- split(sample.data$volume,max = 4)
+adjnvadljkv
+split.volume <- split(sample.data$volume,max = 4)
+split.volume <- split(sample.data$volume)
+volume <- numeric(length(sample.data[2]))
+rm(volume)
+timeinterval <- sample.data$timestamp
+volume <- numeric(length(sample.data$volume))
+for (i in seq_along(sample.data)) {
+volume[i] <- mean(sample.data$timestamp[sample.data$volume == timeinterval[i]])
+}
+rm(timeinterval,volume)
+length(sample.data$volume)
+length(sample.data$volume/4)
+A <- unname(tapply(sample.data$volume,(seq_along(sample.data$volume)-1) %/% 4, sum))/4
+A <- unname(tapply(sample.data$volume,(seq_along(sample.data$volume)-1) %/% 4, sum))/4
+A <- unname(tapply(sample.data,(seq_along(sample.data$volume)-1) %/% 4, sum))/4
+trade.volume.data <- function(data) {
+volume.data <- as.numeric(trading.data$volume)
+volume.data <- volume.data[!is.na(volume.data)]
+volme_data <- unname(tapply(volume.data,(seq_along(volume.data)-1) %/% 4, sum))/4
+cat("The average trading volumes at each interval is")
+cat("\n")
+print(volume.data)
+}
+trade.volume.data(trading.data)
+trade.volume.data(trading.data)
+A <- tapply(sample.data$volume, rep(1:(length(sample.data$volume)), each = 4), sum)
+A <- tapply(sample.data$volume, rep(1:(length(sample.data$volume)/4), each = 4), sum)
+sample.data.a <- as.numeric(sample.data$volume)
+A <- tapply(sample.data.a, rep(1:(length(sample.data.a)/4), each = 4), sum)
+A
+class(A)
+A1 <- data.frame(A)
+A1
+View(A1)
+#creating a function trading.volume to find
+#the sum of the total volume traded
+#volume returns the sum of the total traded volume
+trading.volume <- function(volume) {
+volume <- sum(as.numeric(trading.data$volume), na.rm = TRUE)
+cat("Total volume traded is")
+cat("\n")
+print(volume)
+}
+trading.volume(trading.data)
+########################################################
+#C)
+trade.volume.data <- function(data) {
+volume.data <- as.numeric(trading.data$volume)
+#volume.data <- volume.data[!is.na(volume.data)]
+volume.data <- na.omit(volume.data)
+volme_data <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+cat("The average trading volumes at each interval is")
+cat("\n")
+print(volume.data)
+}
+trade.volume.data <- function(data) {
+volume.data <- as.numeric(trading.data$volume)
+#volume.data <- volume.data[!is.na(volume.data)]
+volume.data <- na.omit(volume.data)
+volme_data <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+cat("The average trading volumes at each interval is")
+cat("\n")
+print(volume.data)
+}
+trade.volume.data <- function(data) {
+volume.data <- as.numeric(trading.data$volume)
+volume.data <- volume.data[!is.na(volume.data)]
+volume.data <- na.omit(volume.data)
+volme_data <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+cat("The average trading volumes at each interval is")
+cat("\n")
+print(volume.data)
+}
+trade.volume.data <- function(data) {
+volume.data <- as.numeric(trading.data$volume)
+#volume.data <- volume.data[!is.na(volume.data)]
+volume.data <- na.omit(volume.data)
+volme_data <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+cat("The average trading volumes at each interval is")
+cat("\n")
+print(volume.data)
+}
+trade.volume.data(trading.data)
+volume.trade <- function(volume){
+volume <- trading.data$volume
+volume <- na.omit(volume)
+volme_data <- tapply(volume, rep(1:length(volume)/4),each = 4),sum)
+print(volume_data)
+}
+volume.trade <- function(volume){
+volume <- trading.data$volume
+volume <- na.omit(volume)
+volume_data <- tapply(volume, rep(1:length(volume)/4),each = 4),sum)
+print(volume_data)
+}
+)
+trade.volume.data <- function(data) {
+volume.data <- as.numeric(trading.data$volume)
+#volume.data <- volume.data[!is.na(volume.data)]
+volume.data <- na.omit(volume.data)
+volume_data <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+cat("The average trading volumes at each interval is")
+cat("\n")
+print(volume.data)
+}
+trade.volume.data(trading.data)
+volume.trade <- function(volume){
+volume <- trading.data$volume
+volume <- na.omit(volume)
+volume_data <- tapply(volume, rep(1:length(volume)/4),each = 4),sum)
+print(volume_data)
+}
+volume.trade <- function(volume){
+volume <- trading.data$volume
+volume <- na.omit(volume)
+volume.data <- as.numeric(volume)
+volume_data <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+print(volume_data)
+}
+volume.trade <- function(volume){
+volume <- trading.data$volume
+volume <- na.omit(volume)
+volume.data.trade <- as.numeric(volume)
+volume.data.trade <- tapply(volume.data, rep(1:length(volume.data)/4),each = 4),sum)
+print(volume.data.trade)
+}
+volume.data <- trading.data
+volume.data
+volume.trade <- function(volume_trade){
+volume_trade <- volume.data[,c(4,10)]
+volume_trade <- as.numeric(volume.data$volume)
+volume_trade <- na.omit(volume_trade)
+volume_trade
+}
+volume.data(trading.data)
+volume.trade <- function(volume_trade){
+volume_trade <- volume.data[,c(4,10)]
+volume_trade <- as.numeric(volume.data$volume)
+volume_trade <- na.omit(volume_trade)
+volume_trade
+}
+volume.trade <- function(volume_trade){
+volume_trade <- volume.data[,c(4,10)]
+volume_trade <- as.numeric(volume.data$volume)
+volume_trade <- na.omit(volume_trade)
+volume_trade
+}
+volume.data(trading.data)
+yahoodata <- readLines("http://finance.yahoo.com/q/hp?s=GOOG+Historical+Prices")
+yahoodata
+library(openxlsx)
+library(XML)
+yahoodata.finance <-xmlParse("http://finance.yahoo.com/q/hp?s=GOOG+Historical+Prices")
+yahoodata.finance <- xmlParse("http://finance.yahoo.com/q/hp?s=GOOG+Historical+Prices")
+yahoodata
+setwd("C://Users/Michael Propp/Desktop/Information Assignemnt/Ass-7/")
+library(XML)
+library(RCurl)
+library(scrapeR)
+espn_data <- "http://www.espncricinfo.com/ci/content/player/35320.html#statistics"
+espn_data_lines <- readLines(espn_data)
+espn_data_lines
+espn_tc <- textConnection(espn_data)
+espn_data_tc <- readLines(espn_tc)
+close(espn_data_tc)
+espn_data_tc
+library(XML)
+library(RCurl)
+library(scrapeR)
+espn_data <- "http://www.espncricinfo.com/ci/content/player/35320.html#statistics"
+espn_data_lines <- readLines(espn_data)
+espn_data_lines
+head(espn_data_lines)
+espn_data_tree <- htmlParse(espn_data_tc,useInternalNodes = T)
+espn_data_tree <- htmlParse(espn_data_lines,useInternalNodes = T)
+espn_data_tree
+espn_data_tree
+library(RCurl)
+library(XML)
+theurl <- "http://www.cityofboston.gov/assessing/search/?pid=0402236000"
+webpage <- getURL(theurl)
+webpage <- readLines(tc)
+close(tc)
+tc <- textConnection(webpage)
+webpage <- readLines(tc)
+close(tc)
+pagetree <- htmlTreeParse(webpage, useInternalNodes = TRUE)
+pagetree
+parcelID <- unlist(xpathApply(pagetree,"//*/table[@width='100%'][@cellpadding='0']/tr[3]/td",xmlValue))
+parcelID
+parcelID
+parcelID_new <- unlist(xpathApply(pagetree,"//*/table[@width='100%'][@cellpadding='0']/tr[4]/td",xmlValue))
+parcelID_new
+parcelID_new <- unlist(xpathApply(pagetree,"//*/table[@width='100%'][@cellpadding='0']/tr[2]/td",xmlValue))
+parcelID_new
+parcelID_new <- unlist(xpathApply(pagetree,"//*/table[@width='100%'][@cellpadding='0']/tr[2]/td",xmlValue))
+parcelID_new
+parcelID_new <- unlist(xpathApply(pagetree,"//*/table[@width='100%'][@cellpadding='0']/tr[4]/td",xmlValue))
+parcelID_new
+parcelID_new <- unlist(xpathApply(pagetree,"//*/table[@width='100%'][@cellpadding='0']/tr[1]/td",xmlValue))
+parcelID_new
+parcelID_new
+sample.data <- readHTMLTable("http://a-little-book-of-r-for-time-series.readthedocs.org/en/latest/src/timeseries.html")
+library(XML)
+library(RCurl)
+library(scrapeR)
+sample.data <- readHTMLTable("http://a-little-book-of-r-for-time-series.readthedocs.org/en/latest/src/timeseries.html")
+sample.data
+rm(sample.data
+)
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engine table']/tr'[2]/td",xmlValue))
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'head']/tr'[2]/td",xmlValue))
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'head']/tr[2]",xmlValue))
+espn_sample
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'head']/tr[2]/td",xmlValue))
+espn_sample
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'head']/tr[3]/td",xmlValue))
+espn_sample
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engine table']/tr[2]/td",xmlValue))
+espn_sample
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']/tbody[2]/tr",xmlValue))
+espn_sample
+espn_data_tree
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']/tr[2]/td/b",xmlValue))
+espn_sample
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']/tr[1]/td/b",xmlValue))
+espn_sample
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']/tr[1]/td[2]/b",xmlValue))
+espn_sample
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']/tr[3]/td/b",xmlValue))
+espn_sample
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']/tr[1]/td/b",xmlValue))
+espn_sample
+ownerName <- unlist(xpathApply(pagetree,"//*/table[@width='100%'][@cellpadding='0']/tr[9]/td",xmlValue))
+ownerName
+ownerName
+###########################################################
+parcelID_new <- unlist(xpathApply(pagetree,"//*/table[@width='100%'][@cellpadding='0']/tr[2]/td",xmlValue))
+parcelID_new
+parcelID_new <- unlist(xpathApply(pagetree,"//*/table[@width='100%'][@cellpadding='0']/tr[12]/td",xmlValue))
+parcelID_new
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*//table[@class = 'engineTable']/tr[1]/td/b",xmlValue))
+espn_sample
+espn_sample <- unlist(xpathApply(espn_data_tree,"///*/table[@class = 'engineTable']/tr[1]/td/b",xmlValue))
+espn_sample
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']/tr[1]/td",xmlValue))
+espn_sample
+espn_sample <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']//tr[1]/td",xmlValue))
+espn_sample
+espn_sample_1 <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']///tr[1]/td",xmlValue))
+espn_sample_1 <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']//*/tr[1]/td",xmlValue))
+espn_sample_1
+espn_sample_1 <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']//*/tr[2]/td",xmlValue))
+espn_sample_1
+espn_sample_1 <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']//*/tr/td",xmlValue))
+espn_sample_1
+espn_sample_2 <- unlist(xpathApply(espn_data_tree,"//*/table//*/tr/td",xmlValue))
+espn_sample_2
+espn_sample_3 <- unlist(xpathApply(espn_data_tree,"//*/table//*//tr/td",xmlValue))
+espn_sample_3
+espn_sample_3 <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']//*//tr/td",xmlValue))
+espn_sample_3
+espn_sample_3 <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']//*//*/tr/td",xmlValue))
+espn_sample_3
+espn_sample_3 <- unlist(xpathApply(espn_data_tree,"//*/table[@class = 'engineTable']//*/*/tr/td",xmlValue))
+espn_sample_3

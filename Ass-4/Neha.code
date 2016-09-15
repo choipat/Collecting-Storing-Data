@@ -1,0 +1,190 @@
+# Assignment 4
+
+getwd()
+setwd("C:/Users/Neha/Desktop")
+install.packages(openxlsx)
+library(openxlsx)
+
+
+GeographicCoordinate<-read.xlsx("2013 Geographric Coordinate Spreadsheet for U S  Farmers Markets 8'3'1013.xlsx")
+
+DataFrame <- as.data.frame(GeographicCoordinate)
+DataFrame  
+
+
+
+##################################4b -1 #################
+
+
+install.packages("XML")
+library(XML)
+ senatorINFourl<-"http://www.xmldatasets.net/temp/179681356453762.xml"
+SenatorInfData<-xmlToDataFrame(senatorINFourl)
+View(SenatorInfData)
+class(SenatorInfData)
+
+GetSenatorNames<- function(SenNAme){
+
+StatesSenator <- SenatorInfData[SenatorInfData$state %in% SenNAme,]
+Names<- c(StatesSenator)
+cat("The name of the senators for a given state are")
+cat("\n")
+FirstName<- c(Names$first_name)
+print(FirstName)
+LastName<- c(Names$last_name)
+print(LastName)
+}
+
+GetSenatorNames("CA")
+
+####################################4b 2##########################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mode(data)
+#head(data)
+#length(data)
+#column<-data$state
+rm(list= rm())
+
+
+
+
+{}
+xmlfile<-xmlTreeParse(url)
+root<-xmlRoot(xmlfile)
+name<-xmlValue(root[[4]][[2]]) 
+
+name
+
+? gunzip
+??R.utils
+getwd()
+setwd("C:/Users/Neha/Desktop")
+system("movies.list.gz filename")
+unzip("movies.list.gz", files = NULL, list = FALSE, overwrite = TRUE,junkpaths = FALSE, exdir = ".", unzip = "internal",setTimes = FALSE)
+
+file <- zip.file.extract(movies.list.gz, zipname = "R.zip",
+                 unzip = getOption("unzip"), dir = tempdir())
+untar('movies.list.gz')
+#library(R.utils)
+#gunzip("movies.list.gz")
+
+######### 4c####################
+
+install.packages("XML")
+library(XML)
+url2<-"http://www.cs.washington.edu/research/xmldatasets/data/auctions/ebay.xml"
+#data2<-xmlToDataFrame(url)
+#data2
+xmlfile2<-xmlTreeParse(url2)
+xmlfile2
+root2<-xmlRoot(xmlfile2)
+length(root2)
+
+#root2[[1]]$children$high_bidder
+##root2[[1]]$children$auction_info$null_bids
+as.numeric(xmlValue(root2[[1]][[5]][[5]]))
+#xmlvalue(root2[[1]][[5]][[5]])
+bidsfunc<- function(n)as.numeric(xmlValue(root2[[n]][[5]][[5]]))
+bidsfunc(2)
+sapply(array(1:5), bidsfunc)
+
+####################################################################################################
+
+url2<-xmlInternalTreeParse("http://www.cs.washington.edu/research/xmldatasets/data/auctions/ebay.xml")
+sample<-xpathApply(url2,"//listing/auction_info[num_bids>5]/num_bids", function(n) as.numeric(xmlValue(n)))
+length(sample)
+
+
+## doubt###
+root2[[1]]$children$auction_info[[5]]
+root2[[3]]
+
+#########
+###################2################
+
+futureTrades<-xmlRoot(xmlTreeParse("http://www.barchartmarketdata.com/data-samples/getHistory15.xml"))
+length(futureTrades)
+futureTrades[[2]][[5]]
+func<- function(n)as.numeric(xmlValue(futureTrades[[n]][[5]]))
+func(5)
+
+###################### 4c 2 final#######
+TradeDataUrl <-"http://www.barchartmarketdata.com/data-samples/getHistory15.xml"
+TradeData <-xmlToDataFrame(TradeDataUrl)
+
+HighestClosingPrice<- function(Price){
+
+
+MaxPrice<-max(TradeData$high, na.rm = T)
+cat("highest closing price for the security")
+cat("\n")
+print(MaxPrice)
+}
+
+HighestClosingPrice(ClosingPrice)
+##################################################3
+VolumeTraded <- function(volume){
+  
+  TotalVolume <- sum(as.numeric(TradeData$volume), na.rm = T)
+  cat(" the total volume traded")
+  cat("\n")
+  print(TotalVolume)
+}
+VolumeTraded(VolumeTraded)
+
+########################################################
+as.numeric(TradeDATA$volume)
+xyz<-(cut(TradeDATA$volume,4 , labels = False))
+mode(TradeDATA$volume)
+as.numeric(TradeDATA)
+ TradeDATA$volume seq(from = 1, to = 93, by =4)
+
+##############4c #################################
+library(lubridate)
+time<- ymd_hms(TradeDATA$timestamp)
+hms(time)
+tm<- as.Date((time), format = "%H:%M")
+#split(TradeDATA$volume, sample(1:93, nrows(TradeDATA$volume), replace @= T  ))
+
+
+
+y<-as.numeric(as.character((TradeDATA$volume, sample(rep(1:23, 4)))))
+
+TradeDATA<-xmlToDataFrame(TradeData)
+
+y<-as.numeric(as.character(TradeDATA$volume))
+y<-split(y,sample(rep(1:23,4)))
+y<-na.omit(y)
+ y     
+      for (i in 1:23){
+  mean (split(TradeDATA$volume, sample(rep(i, 4))))
+}
+()
+use warnings()
+dataset<-(TradeDATA[,-1])
+by(sample[1:23], dataset$volume, mean)
+
+
+
+
+
+
+
+
+
